@@ -1,0 +1,110 @@
+{
+  "name": "MainNet",
+  "pollTime": "5000",
+  "sites": [
+    {
+      "service": "antChain",
+      "url": "http://www.antchain.org/api/v1/",
+      "location": "United States",
+      "address": "47.88.34.247",
+      "locale": "us",
+      "type": "REST"
+    },
+    {
+      "service": "neon",
+      "url": "http://api.neonwallet.com/v1/",
+      "location": "United States",
+      "address": "54.221.228.80",
+      "locale": "us",
+      "type": "REST"
+    },
+    {
+      "protocol": "http",
+      "url": "seed1.neo.org",
+      "location": "China",
+      "address": "139.219.226.107",
+      "locale": "cn",
+      "type": "RCP"
+    },
+    {
+      "protocol": "http",
+      "url": "seed2.neo.org",
+      "location": "China",
+      "address": "139.219.106.33",
+      "locale": "cn",
+      "type": "RCP"
+    },
+    {
+      "protocol": "http",
+      "url": "seed3.neo.org",
+      "location": "Canada",
+      "address": "47.89.178.72",
+      "locale": "ca",
+      "type": "RCP"
+    },
+    {
+      "protocol": "http",
+      "url": "seed4.neo.org",
+      "location": "Canada",
+      "address": "47.88.53.224",
+      "locale": "ca",
+      "type": "RCP"
+    },
+    {
+      "protocol": "http",
+      "url": "seed5.neo.org",
+      "location": "Canada",
+      "address": "47.91.92.192",
+      "locale": "ca",
+      "type": "RCP"
+    },
+    {
+      "protocol": "http",
+      "url": "api.otcgo.cn",
+      "location": "China",
+      "address": "121.42.26.131",
+      "locale": "cn",
+      "type": "RCP"
+    },
+    {
+      "protocol": "http",
+      "url": "seed1.cityofzion.io",
+      "location": "USA",
+      "locale": "us",
+      "port": "8080",
+      "type": "RCP"
+    },
+    {
+      "protocol": "http",
+      "url": "seed2.cityofzion.io",
+      "location": "USA",
+      "locale": "us",
+      "port": "8080",
+      "type": "RCP"
+    },
+    {
+      "protocol": "http",
+      "url": "seed3.cityofzion.io",
+      "location": "USA",
+      "locale": "us",
+      "port": "8080",
+      "type": "RCP"
+    },
+    {
+      "protocol": "http",
+      "url": "seed4.cityofzion.io",
+      "location": "USA",
+      "locale": "us",
+      "port": "8080",
+      "type": "RCP"
+    },
+    {
+      "protocol": "http",
+      "url": "seed5.cityofzion.io",
+      "location": "USA",
+      "locale": "us",
+      "port": "8080",
+      "type": "RCP"
+    }
+  ]
+}
