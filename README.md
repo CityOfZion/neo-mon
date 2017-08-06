@@ -18,6 +18,18 @@ bower install
 gulp serve
 ```
 
+## Manage Endpoints
+
+Endpoints can be configured by editing the following JSON files
+
+```
+src/assets/json/mainnet.json
+```
+
+```
+src/assets/json/testnet.json
+```
+
 ## Deploy
 
 Neomon is hosted on GitHub pages by publishing to /docs folder. GitHub Settings are configured to use the custom domain: monitor.cityofzion.io
@@ -28,6 +40,8 @@ gulp publish
 ```
 
 This command will update the /docs folder with a deployable version of the application. When the changes are merged into master branch they will immediately show up on http://monitor.cityofzion.io
+
+
 
 ## Common questions
 
@@ -44,4 +58,3 @@ If transactions are being sent to a Node with the intention of them being relaye
 ## Feature Requests
 
 Do you see any features missing or have ideas for improvements, you can add them to the Project:  [Milestone 1](https://github.com/CityOfZion/neo-mon/projects/1)
-Adding new endpoints to NeoMon is manual at the moment. You can request in Slack, Trello or use the Project link above. 
