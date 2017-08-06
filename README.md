@@ -1,8 +1,22 @@
 # NeoMon - Neo Network Status Monitor
 
-## Purpose:
+## Overview:
 
-NeoMon is a tool for monitoring the status of popular RCP Nodes and REST endpoints used in CoZ to help developers work around network issues during development.
+NeoMon is a tool for monitoring the status of popular RCP Nodes and REST endpoints.
+
+## Install, Build and Run
+
+```cmd
+npm install
+```
+
+```cmd
+bower install
+```
+
+```cmd
+gulp serve
+```
 
 ## Common questions
 
