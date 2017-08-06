@@ -1,0 +1,98 @@
+<div class="neo-header"></div>
+<div class="page-header">
+    <span class="neo-name">NEO</span>
+    <span class="page-title">Network Status Monitor</span>
+    <span class="page-config">
+        <span class="dropdown">
+          <a tabindex="0" aria-haspopup="true" aria-label="Change network" class="network-switch" ng-click="vm.dropdownNode = !vm.dropdownNode">
+              Monitoring Network: {{ vm.currentNetwork }}
+              <i class="caret"></i>
+          </a>
+          <ul class="dropdown-menu" ng-show="vm.dropdownNode">
+              <li ng-repeat="(id, network) in vm.networkList" ng-class="{true:'active'}[curNode == key]" ng-click="vm.changeNetwork(id); vm.dropdownNode = false;">
+                  <a>{{ network.label }}</a>
+            </li>
+          </ul>
+        </span>
+    </span>
+</div>
+<section>
+    <div class="page-body">
+        <div class="stats-network-row">
+            <div class="flex-grow"></div>
+            <div class="stats-network-card">
+                <div><i class="fa fa-cube fa-5x"></i></div>
+                <div class="stats-network-card-details">
+                    <div class="small-title">Best Block</div>
+                    <div class="big-details" ng-show="vm.netStats.bestBlock">#{{ vm.netStats.bestBlock.toLocaleString() }}</div>
+                </div>
+            </div>
+            <div class="stats-network-card">
+                <div class="fa-stack fa-3x hourglass-spin">
+                    <i class="fa fa-stack-1x fa-hourglass-start"></i>
+                    <i class="fa fa-stack-1x fa-hourglass-half"></i>
+                    <i class="fa fa-stack-1x fa-hourglass-end"></i>
+                    <i class="fa fa-stack-1x fa-hourglass-end spin"></i>
+                </div>
+                <div class="stats-network-card-details">
+                    <div class="small-title">Last Block</div>
+                    <div class="big-details">
+                        {{ vm.netStats.lastBlockLabel }}
+                    </div>
+                    <div class="big-details" style="height: 1px; visibility: hidden">999 s ago</div>
+                </div>
+            </div>
+            <div class="stats-network-card">
+                <div><i class="fa fa-leaf fa-5x"></i></div>
+                <div class="stats-network-card-details">
+                    <div class="small-title">Avg Block Time</div>
+                    <div class="big-details">{{ vm.netStats.avgBlockTime }}</div>
+                </div>
+            </div>
+            <div class="flex-grow"></div>
+        </div>
+
+        <table class="stats-table">
+            <thead class="stats-table-header">
+            <tr>
+                <th class="stats-table__header" style="width: 20px;">
+                </th>
+                <th class="stats-table__header" style="width: 20%;">
+                    <div>
+                        <span>Endpoint</span>
+                    </div>
+                </th>
+                <th class="stats-table__header" style="width: 20%;">
+                    Type
+                </th>
+                <th class="stats-table__header" style="width: 220px;">
+                    Is It Up?
+                    <i class="fa fa-toggle-on stats-table__icon"></i>
+                </th>
+                <th class="stats-table__header" style="width: 20%;">
+                    Block Height
+                    <i class="fa fa-th-large stats-table__icon"></i>
+                </th>
+                <th class="stats-table__header" style="width: 20%;">
+                    Peers
+                    <i class="fa fa-users stats-table__icon"></i>
+                </th>
+            </tr>
+            </thead>
+            <tbody class="stats-table-body">
+                <tr ng-repeat="endPoint in vm.netStats.endPoints" class="{{ endPoint | statusClass : vm.netStats.bestBlock }}" >
+                    <td class="stats-table__cell"><neo-icon class="icon-button__tsvg" name="{{ 'flag-' + endPoint.country }}"></neo-icon></td>
+                    <td class="stats-table__cell">{{ endPoint.name }}</td>
+                    <td class="stats-table__cell">{{ endPoint.type }}</td>
+                    <td class="stats-table__cell">
+                        <div ng-if="endPoint.isItUp">yes</div>
+                        <div class="color-offline" ng-if="!endPoint.isItUp">offline</div>
+                    </td>
+                    <td class="stats-table__cell">#{{ endPoint.lastBlock.toLocaleString() }}</td>
+                    <td class="stats-table__cell">{{ endPoint.peerCount }}</td>
+                </tr>
+         
+            </tbody>
+        </table>
+    </div>
+</section>

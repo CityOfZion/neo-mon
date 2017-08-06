@@ -1,0 +1,45 @@
+
+.stats-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 1;
+    min-width: 100%;
+    table-layout: fixed;
+    margin-bottom: 17px;
+    margin-top: 17px;
+}
+
+.stats-table-header {
+   min-width: 1360px;
+   padding-top: 17px;
+   padding-left: 8px;
+   padding-right: 8px;
+ }
+
+.stats-table-body {
+  min-width: 1360px;
+  margin-top: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+
+.stats-table__cell {
+  border-top: 1px solid #767676;
+  padding: 8px;
+  vertical-align: top;
+}
+
+.stats-table__header {
+  border-bottom: 1px solid #767676;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  position: relative;
+  text-align: left;
+  vertical-align: top;
+}
+
+.stats-table__icon {
+  margin-left: 5px;
+  margin-right: 5px;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "neomon",
+  "version": "0.1.0",
+  "authors": [
+    "Frank Fox <ffox77@yahoo.com>"
+  ],
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-moment": "^1.0.1"
+  }
+}

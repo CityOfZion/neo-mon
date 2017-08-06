@@ -1,0 +1,24 @@
+a {
+  color: #0e97c0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  height: 100%;
+}
+
+html {
+  background: #fff;
+  color: #767676;
+  font-size: 14px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: scrollbar;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
