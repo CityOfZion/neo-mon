@@ -134,7 +134,7 @@
 
             netStats.endPoints.forEach(function (endPoint) {
 
-                if (endPoint.type === 'RCP') {
+                if (endPoint.type === 'RPC') {
                     endPoint.httpService.poll(netStats.pollingPolicy).getBlockCount().notify(function (result) {
                         endPoint.lastBlock = result;
                         endPoint.isItUp = true;
@@ -205,7 +205,7 @@
 
             netStats.endPoints.forEach(function (endPoint) {
 
-                if (endPoint.type === 'RCP' && endPoint.isItUp) {
+                if (endPoint.type === 'RPC' && endPoint.isItUp) {
                     var httpService = neo.node(endPoint.url);
 
                     httpService.getConnectionCount().then(function (result) {
@@ -235,7 +235,7 @@
 
                 var url, httpService, type = site.type.toUpperCase();
 
-                if (type === 'RCP') {
+                if (type === 'RPC') {
                     url = site.protocol + '://' + site.url;
 
                     if (site.port) {

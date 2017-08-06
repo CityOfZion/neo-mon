@@ -15,7 +15,7 @@
       "location": "China",
       "address": "139.219.226.107",
       "locale": "cn",
-      "type": "RCP"
+      "type": "RPC"
     },
     {
       "protocol": "http",
@@ -23,7 +23,7 @@
       "location": "China",
       "address": "139.219.106.33",
       "locale": "cn",
-      "type": "RCP"
+      "type": "RPC"
     },
     {
       "protocol": "http",
@@ -31,7 +31,7 @@
       "location": "Canada",
       "address": "47.89.178.72",
       "locale": "ca",
-      "type": "RCP"
+      "type": "RPC"
     },
     {
       "protocol": "http",
@@ -39,7 +39,7 @@
       "location": "Canada",
       "address": "47.88.53.224",
       "locale": "ca",
-      "type": "RCP"
+      "type": "RPC"
     },
     {
       "protocol": "http",
@@ -47,7 +47,7 @@
       "location": "Canada",
       "address": "47.91.92.192",
       "locale": "ca",
-      "type": "RCP"
+      "type": "RPC"
     },
     {
       "protocol": "http",
@@ -55,7 +55,7 @@
       "location": "China",
       "address": "121.42.26.131",
       "locale": "cn",
-      "type": "RCP"
+      "type": "RPC"
     },
     {
       "protocol": "http",
@@ -63,7 +63,7 @@
       "location": "USA",
       "locale": "us",
       "port": "8880",
-      "type": "RCP"
+      "type": "RPC"
     },
     {
       "protocol": "http",
@@ -71,7 +71,7 @@
       "location": "USA",
       "locale": "us",
       "port": "8880",
-      "type": "RCP"
+      "type": "RPC"
     },
     {
       "protocol": "http",
@@ -79,7 +79,7 @@
       "location": "USA",
       "locale": "us",
       "port": "8880",
-      "type": "RCP"
+      "type": "RPC"
     },
     {
       "protocol": "http",
@@ -87,7 +87,7 @@
       "location": "USA",
       "locale": "us",
       "port": "8880",
-      "type": "RCP"
+      "type": "RPC"
     },
     {
       "protocol": "http",
@@ -95,7 +95,7 @@
       "location": "USA",
       "locale": "us",
       "port": "8880",
-      "type": "RCP"
+      "type": "RPC"
     }
   ]
 }

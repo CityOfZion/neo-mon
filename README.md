@@ -2,7 +2,7 @@
 
 ## Overview:
 
-NeoMon is a tool for monitoring the status of popular RCP Nodes and REST endpoints on the Neo network.
+NeoMon is a tool for monitoring the status of popular RPC Nodes and REST endpoints on the Neo network.
 
 ## Install, Build and Run
 
