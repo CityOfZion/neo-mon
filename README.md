@@ -57,4 +57,4 @@ If transactions are being sent to a Node with the intention of them being relaye
 
 ## Feature Requests
 
-Do you see any features missing or have ideas for improvements, you can add them to the Project:  [Milestone 1](https://github.com/CityOfZion/neo-mon/projects/1)
+Do you see any features missing or have any ideas for improvements, you can add feature requests and bugs under Issues.
