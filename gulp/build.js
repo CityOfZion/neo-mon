@@ -83,7 +83,10 @@ gulp.task('dist-assets', function () {
     var b = gulp.src(path.join(conf.paths.assets, '/images/**/*.*'))
             .pipe(gulp.dest(conf.paths.dist + '/assets/images'));
 
-    return merge(a,b);
+    var c = gulp.src(path.join(conf.paths.assets, 'CNAME'))
+        .pipe(gulp.dest(conf.paths.dist + '/'));
+
+    return merge(a,b,c);
 });
 
 gulp.task('clean', function () {
