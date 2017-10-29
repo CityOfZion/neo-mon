@@ -105,6 +105,22 @@
       "locale": "us",
       "port": "8080",
       "type": "RPC"
-    }
+    },
+    {
+      "protocol": "http",
+      "url": "node1.o3.network",
+      "location": "Japan",
+      "address": "54.92.68.52",
+      "locale": "jp",
+      "type": "RPC"
+  },
+  {
+      "protocol": "http",
+      "url": "node2.o3.network",
+      "location": "Japan",
+      "address": "54.249.76.125",
+      "locale": "jp",
+      "type": "RPC"
+  }
   ]
 }
