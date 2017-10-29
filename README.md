@@ -45,7 +45,7 @@ This command will update the /docs folder with a deployable version of the appli
 
 ## Common questions
 
-The following are a list of common problems that developers may have while developing an application on the Neo network.
+The following is a list of common problems that developers may have while developing an application on the Neo network.
 
 ### Is an endpoint up or down? 
 
