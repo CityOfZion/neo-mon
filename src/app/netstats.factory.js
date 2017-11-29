@@ -257,8 +257,11 @@
                     if (site.service === 'antChain') {
                         httpService = neo.antChain(url);
                     }
+                    else if (site.service === 'neoScan') {
+                        httpService = neo.neoScan(url);
+                    }
                     else if (site.service === 'neon') {
-                        httpService = neo.neon(url).useTransforms(true);
+                        httpService = neo.neon(url);
                     }
                     else {
                         throw new Error('Unknown REST Service: ' + site.service);

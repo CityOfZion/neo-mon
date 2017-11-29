@@ -3,10 +3,10 @@
   "pollTime": "5000",
   "sites": [
     {
-      "service": "antChain",
-      "url": "http://www.antchain.org/api/v1/",
+      "service": "neoScan",
+      "url": "https://neoscan.io/api/main_net/v1/",
       "location": "United States",
-      "address": "47.88.34.247",
+      "address": "104.25.126.31",
       "locale": "us",
       "type": "REST"
     },

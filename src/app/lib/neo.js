@@ -1,5 +1,3 @@
-/* NOTE - This file was generated from  https://github.com/CityOfZion/neo-api-js */
-
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
 	typeof define === 'function' && define.amd ? define(['exports'], factory) :
@@ -7,10 +5,8 @@
 }(this, (function (exports) { 'use strict';
 
 var protocolClient;
-var serviceMap = {};
 
 var registry = {
-    registerTransforms: registerTransforms,
     registerProtocolClient: registerProtocolClient
 };
 
@@ -21,14 +17,6 @@ function registerProtocolClient (client) {
 
 function getProtocolClient () {
     return protocolClient;
-}
-
-function registerTransforms (serviceName, transforms) {
-    serviceMap[serviceName] =  transforms;
-}
-
-function getTransformsByService (serviceName) {
-    return serviceMap[serviceName];
 }
 
 function serviceOptions(service, serviceName, initObj) {
@@ -43,12 +31,10 @@ function serviceOptions(service, serviceName, initObj) {
     service.serviceName = serviceName;
     service.serviceBaseUrl = initObj.baseUrl || '';
     service.servicePollInterval = initObj.poll;
-    service.serviceUseTransforms = false;
 
     service.baseUrl = baseUrl;
     service.protocolClient = protocolClient;
     service.poll = poll;
-    service.useTransforms = useTransforms;
 
     function baseUrl (val) {
 
@@ -82,24 +68,7 @@ function serviceOptions(service, serviceName, initObj) {
 
         return this;
     }
-
-    function useTransforms (val) {
-
-        if (!val) {
-            return this.serviceUseTransforms;
-        }
-
-        this.serviceUseTransforms = val;
-
-        return this;
-    }
 }
-
-
-
-//neo.node().baseUrl('').protocol('http').poll(2000).getBlockHeight();
-//neo.node().baseUrl('http://localhost:3033').poll(2000).getBlockHeight();
-//neo.node({ baseUrl: 'http://localhost:3033', poll: 2000 }).getBlockHeight();
 
 function IntervalUtil (options) {
 
@@ -157,7 +126,108 @@ function IntervalUtil (options) {
     this.isRunning = isRunning;
 }
 
+function RpcService () {
+
+    this.$post = $post;
+
+    function $post (rpcMethod, rpcParams) {
+        return rpcRequest(this, 'POST', rpcMethod, rpcParams);
+    }
+
+    function rpcRequest (service, method, rpcMethod, rpcParams) {
+
+        if (!rpcMethod) {
+            throw new Error('You must configure the rpc method');
+        }
+
+        var data = { jsonrpc: '2.0', id: 1 };
+
+        data.method = rpcMethod;
+        data.params = rpcParams || [];
+
+        var options = {};
+
+        options.url = service.baseUrl();
+        options.data = data;
+        options.method = method;
+
+        options.transformResponse = function (response) {
+            return response.data.result;
+        };
+
+        options.transformResponseError = function (response) {
+            return response.data.error;
+        };
+
+        return makeServiceRequest(service, options);
+    }
+}
+
+function IpcService () {
+
+    this.$send = $send;
+
+    function $send (method, params) {
+        return ipcRequest(this, method, params);
+    }
+
+    function ipcRequest (service, method, params) {
+
+        if (!method) {
+            throw new Error('You must configure the ipc method');
+        }
+
+        var data = {
+            method: method,
+            params: params || []
+        };
+
+        var options = {};
+
+        options.data = data;
+
+        return makeServiceRequest(service, options);
+    }
+}
+
+var factory = ServiceFactory();
+
+function ServiceFactory () {
+
+    function createRcpService (options) {
+        var inst = new RpcService();
+
+        serviceOptions(inst, 'node', options);
+
+        return inst;
+    }
+
+    function createIpcService (options) {
+        var inst = new IpcService();
+
+        serviceOptions(inst, 'node', options);
+
+        return inst;
+    }
+
+    function createRestService (options) {
+        var inst = new RestService();
+
+        serviceOptions(inst, 'node', options);
+
+        return inst;
+    }
+
+    return {
+        createRcpService: createRcpService,
+        createIpcService: createIpcService,
+        createRestService: createRestService
+    };
+}
+
 var service = Service();
+
+service.factory = factory;
 
 function Service () {
 
@@ -283,11 +353,11 @@ function PollRunner (policy) {
     }
 }
 
-function makeRpcRequest (restService, httpOptions, methodSignature) {
+function makeServiceRequest (restService, httpOptions) {
 
     return _wrapPromise(function (resolve, reject, notify) {
 
-        var ctx = prepareContext(restService, methodSignature);
+        var ctx = prepareContext();
 
         ctx.successFunction = resolve;
         ctx.errorFunction = reject;
@@ -295,22 +365,22 @@ function makeRpcRequest (restService, httpOptions, methodSignature) {
         ctx.transformResponse = httpOptions.transformResponse || noop;
         ctx.transformResponseError = httpOptions.transformResponseError || noop;
 
-        var rpcClient = restService.protocolClient();
+        var client = restService.protocolClient();
 
-        var rpcOptions = rpcClient.buildRequestOptions(httpOptions);
+        var options = client.buildRequestOptions(httpOptions);
 
         var poll = restService.poll();
 
         if (poll) {
             var pollRunner = service.getPollRunner(poll).addRequest(function () {
-                return _makeRpcRequest(rpcClient, rpcOptions, ctx);
+                return _makeServiceRequest(client, options, ctx);
             });
 
             ctx.stopPolling = pollRunner.pause;
             ctx.isPolling = pollRunner.isPolling;
         }
         else {
-            _makeRpcRequest(rpcClient, rpcOptions, ctx);
+            _makeServiceRequest(client, options, ctx);
         }
     });
 }
@@ -353,49 +423,18 @@ function _wrapPromise (callback) {
     return promise;
 }
 
-function prepareContext(service$$1, methodSignature) {
+function prepareContext() {
     var ctx = {};
 
-    ctx.transform = transformPassThrough;
     ctx.stopPolling = noop;
     ctx.isPolling = function () { return false; };
-
-    if (service$$1.serviceUseTransforms && service$$1.serviceName)  {
-
-        var availableTransforms = getTransformsByService(service$$1.serviceName);
-
-        if (availableTransforms) {
-            ctx.transform = getTransform(availableTransforms, methodSignature);
-        }
-    }
 
     return ctx;
 }
 
-function getTransform (availableTransforms, methodSignature) {
-    return function (rawData) {
+function _makeServiceRequest (client, options, ctx) {
 
-        var foundTransform;
-
-        availableTransforms.some(function (entry) {
-            if (methodSignature.indexOf(entry.sig) === 0) {
-                foundTransform = entry.transform;
-
-                return true;
-            }
-        });
-
-        return foundTransform ? foundTransform(rawData) : rawData;
-    };
-}
-
-function transformPassThrough (rawData) {
-    return rawData;
-}
-
-function _makeRpcRequest (rpcClient, rpcOptions, ctx) {
-
-    var promise = rpcClient.invoke(rpcOptions);
+    var promise = client.invoke(options);
 
     promise.catch(function (response) {
         ctx.errorFunction(response);
@@ -419,10 +458,10 @@ function _makeRpcRequest (rpcClient, rpcOptions, ctx) {
         }
 
         if (ctx.isPolling()) {
-            ctx.notifyFunction(ctx.transform(data), response);
+            ctx.notifyFunction(data, response);
         }
         else {
-            ctx.successFunction(ctx.transform(data), response);
+            ctx.successFunction(data, response);
         }
 
     });
@@ -468,8 +507,6 @@ function RestService () {
             throw new Error('You must configure at least the http method and url');
         }
 
-        var methodSignature = method + '::' + url;
-
         options = options || {};
 
         if (service.baseUrl() !== undefined) {
@@ -481,15 +518,19 @@ function RestService () {
         options.method = method;
         options.queryParams = queryParams;
 
-        options.transformResponse = function (response) {
-            return response.data;
-        };
+        if (!options.hasOwnProperty('transformResponse')) {
+            options.transformResponse = function (response) {
+                return response.data;
+            };
+        }
 
-        options.transformResponseError = function (response) {
-            return response.data;
-        };
+        if (!options.hasOwnProperty('transformResponseError')) {
+            options.transformResponseError = function (response) {
+                return response.data;
+            };
+        }
 
-        return makeRpcRequest(service, options, methodSignature);
+        return makeServiceRequest(service, options);
     }
 }
 
@@ -561,12 +602,26 @@ function getAssetTransactionsByAddress (address) {
     return this.$get('address/utxo/' + address);
 }
 
+function neoScan(options) {
+    var inst = new RestService();
+
+    serviceOptions(inst, 'neoScan', options);
+
+    inst.getCurrentBlockHeight = getCurrentBlockHeight$1;
+
+    return inst;
+}
+
+function getCurrentBlockHeight$1 () {
+    return this.$get('get_height');
+}
+
 function neon(options) {
     var inst = new RestService();
 
     serviceOptions(inst, 'neon', options);
 
-    inst.getCurrentBlockHeight = getCurrentBlockHeight$1;
+    inst.getCurrentBlockHeight = getCurrentBlockHeight$2;
     inst.getAddressBalance = getAddressBalance$2;
     inst.getAssetTransactionsByAddress = getAssetTransactionsByAddress$1;
     inst.getTransactionByTxid = getTransactionByTxid$1;
@@ -574,8 +629,14 @@ function neon(options) {
     return inst;
 }
 
-function getCurrentBlockHeight$1 () {
-    return this.$get('block/height');
+function getCurrentBlockHeight$2 () {
+    return this.$get('block/height', null, { transformResponse: transformResponse });
+
+    function transformResponse (response) {
+        return {
+            height: response.data && response.data.block_height
+        };
+    }
 }
 
 function getAddressBalance$2 (address) {
@@ -588,45 +649,6 @@ function getAssetTransactionsByAddress$1 (address) {
 
 function getTransactionByTxid$1 (txid) {
     return this.$get('transaction/' + txid);
-}
-
-function RpcService () {
-
-    this.$post = $post;
-
-    function $post (rpcMethod, rpcParams) {
-        return rpcRequest(this, 'POST', rpcMethod, rpcParams);
-    }
-
-    function rpcRequest (service, method, rpcMethod, rpcParams) {
-
-        if (!rpcMethod) {
-            throw new Error('You must configure the rpc method');
-        }
-
-        var data = { jsonrpc: '2.0', id: 1 };
-
-        data.method = rpcMethod;
-        data.params = rpcParams || [];
-
-        var options = {};
-
-        options.url = service.baseUrl();
-        options.data = data;
-        options.method = method;
-
-        options.transformResponse = function (response) {
-            return response.data.result;
-        };
-
-        options.transformResponseError = function (response) {
-            return response.data.error;
-        };
-
-        var methodSignature = method + '::' + rpcMethod;
-
-        return makeRpcRequest(service, options, methodSignature);
-    }
 }
 
 function node(options) {
@@ -2002,12 +2024,6 @@ var axiosClient = AxiosClient();
 
 function AxiosClient (){
 
-    var supportMap = { http: true, rpc: true };
-
-    function hasProtocolSupport (protocol) {
-        return supportMap[protocol];
-    }
-
     function invoke (restOptions) {
         return index(restOptions);
     }
@@ -2058,128 +2074,15 @@ function AxiosClient (){
 
     return {
         invoke: invoke,
-        hasProtocolSupport: hasProtocolSupport,
         buildRequestOptions: buildRequestOptions
     };
 }
 
-var AddressBalanceFactory = AddressBalanceFactory$1();
-
-function AddressBalanceFactory$1 () {
-
-    function AddressBalance () {
-        this.id = undefined;
-        this.antShares = undefined;
-        this.antCoins = undefined;
-    }
-
-    AddressBalance.prototype.update = update;
-
-    function update (rawData) {
-        this.id = rawData.address;
-
-        if (rawData.asset && rawData.asset.length === 2) {
-            this.antShares = Object.assign({}, rawData.asset[0]);
-            this.antCoins = Object.assign({}, rawData.asset[1]);
-        }
-    }
-
-    function createFromJson (rawData) {
-        var inst = new AddressBalance();
-
-        inst.update(rawData);
-
-        return inst;
-    }
-
-    return {
-        createFromJson: createFromJson
-    };
-}
-
-var AddressAssetFactory = AddressAssetFactory$1();
-
-function AddressAssetFactory$1 () {
-
-    function AddressAsset () {
-        this.id = undefined;
-        this.name = undefined;
-        this.balance = undefined;
-        this.transactions = undefined;
-    }
-
-    AddressAsset.prototype.update = update;
-
-    function update (rawData) {
-        this.id = rawData.assetId;
-        this.name = rawData.name;
-        this.balance = rawData.balance;
-
-        //List of transactions that contribute to the total balance
-        this.transactions = rawData.list.map(function (tx) {
-            return Object.assign({}, tx);
-        });
-    }
-
-    function createFromJson (rawDataList) {
-
-        return rawDataList.map(function (rawData) {
-            var inst = new AddressAsset();
-
-            inst.update(rawData);
-
-            return inst;
-        });
-    }
-
-    return {
-        createFromJson: createFromJson
-    };
-}
-
-var antChainTransforms = AntChainTransforms();
-
-function AntChainTransforms () {
-
-    function transformGetValue (result) {
-        return AddressBalanceFactory.createFromJson(result);
-    }
-
-    function transformGetUnspent (result) {
-        return AddressAssetFactory.createFromJson(result);
-    }
-
-    return [
-        { sig: 'GET::address/get_value/', transform: transformGetValue },
-        { sig: 'GET::address/get_unspent/', transform: transformGetUnspent }
-    ];
-
-}
-
-var neonTransforms = NeonTransforms();
-
-function NeonTransforms () {
-
-    function transformGetBlockHeight (result) {
-        return {
-            height: result.block_height
-        };
-    }
-
-    return [
-        { sig: 'GET::block/height', transform: transformGetBlockHeight }
-    ];
-
-}
-
 registerProtocolClient(axiosClient);
-
-registerTransforms('antChain', antChainTransforms);
-
-registerTransforms('neon', neonTransforms);
 
 exports.antChain = antChain;
 exports.antChainXyz = antChainXyz;
+exports.neoScan = neoScan;
 exports.neon = neon;
 exports.node = node;
 exports.rest = rest;
