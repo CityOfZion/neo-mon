@@ -19,11 +19,12 @@
       "type": "REST"
     },
     {
-      "protocol": "http",
+      "protocol": "https",
       "url": "seed1.neo.org",
       "location": "China",
-      "address": "139.219.226.107",
+      "address": "47.94.164.49",
       "locale": "cn",
+      "port": "10331",
       "type": "RPC"
     },
     {
