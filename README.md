@@ -30,6 +30,8 @@ src/assets/json/mainnet.json
 src/assets/json/testnet.json
 ```
 
+Prepare the changes for deployment by running the Deploy step below.
+
 ## Deploy
 
 Neomon is hosted on GitHub pages by publishing to /docs folder. GitHub Settings are configured to use the custom domain: monitor.cityofzion.io
