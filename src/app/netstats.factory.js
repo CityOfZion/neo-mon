@@ -99,6 +99,7 @@
 
                     netStats.lastBlockTime = moment();
 
+                    getVersions(netStats);
                     getPeers(netStats);
                 }
 
@@ -219,6 +220,24 @@
                 }
             });
         }
+
+        function getVersions (netStats) {
+
+            netStats.endPoints.forEach(function (endPoint) {
+
+                if (endPoint.type === 'RPC') {
+                    var httpService = neo.node(endPoint.url);
+
+                    httpService.getVersion().then(function (result) {
+                        endPoint.version = result;
+                    })
+                    .catch(function () {
+                        endPoint.version.useragent = '/ ? /';
+                    });
+
+                }
+            });
+        }
         
         //=======================================================//
         //================== Factory Methods ====================//
@@ -276,6 +295,7 @@
                     type: type,
                     isItUp: false,
                     peerCount: ' - ',
+                    version: { useragent: ' - ' },
                     location: site.location,
                     url: url,
                     locale: site.locale,

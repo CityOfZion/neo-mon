@@ -57,23 +57,26 @@
             <tr>
                 <th class="stats-table__header" style="width: 20px;">
                 </th>
-                <th class="stats-table__header" style="width: 20%;">
+                <th class="stats-table__header" style="width: 15%;">
                     <div>
                         <span>Endpoint</span>
                     </div>
                 </th>
-                <th class="stats-table__header" style="width: 20%;">
+                <th class="stats-table__header" style="width: 15%;">
                     Type
+                </th>
+                <th class="stats-table__header" style="width: 15%;">
+                    Version
                 </th>
                 <th class="stats-table__header" style="width: 220px;">
                     Is It Up?
                     <i class="fa fa-toggle-on stats-table__icon"></i>
                 </th>
-                <th class="stats-table__header" style="width: 20%;">
+                <th class="stats-table__header" style="width: 15%;">
                     Block Height
                     <i class="fa fa-th-large stats-table__icon"></i>
                 </th>
-                <th class="stats-table__header" style="width: 20%;">
+                <th class="stats-table__header" style="width: 15%;">
                     Peers
                     <i class="fa fa-users stats-table__icon"></i>
                 </th>
@@ -84,6 +87,7 @@
                     <td class="stats-table__cell"><neo-icon class="icon-button__tsvg" name="{{ 'flag-' + endPoint.country }}"></neo-icon></td>
                     <td class="stats-table__cell">{{ endPoint.name }}</td>
                     <td class="stats-table__cell">{{ endPoint.type }}</td>
+                    <td class="stats-table__cell">{{ (endPoint.version && endPoint.version.useragent) || '?' }}</td>
                     <td class="stats-table__cell">
                         <div ng-if="endPoint.isItUp">yes</div>
                         <div class="color-offline" ng-if="!endPoint.isItUp">offline</div>
