@@ -232,7 +232,7 @@
                         endPoint.version = result;
                     })
                     .catch(function () {
-                        endPoint.version.useragent = '/ ? /';
+                        endPoint.version.useragent = '/ < 2.4.1 /';
                     });
 
                 }
