@@ -106,7 +106,77 @@
       "locale": "us",
       "port": "8080",
       "type": "RPC"
-    }, 
+    },
+    {
+      "protocol": "http",
+      "url": "seed0.bridgeprotocol.io",
+      "location": "USA",
+      "locale": "us",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed1.bridgeprotocol.io",
+      "location": "USA",
+      "locale": "us",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed2.bridgeprotocol.io",
+      "location": "USA",
+      "locale": "us",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed3.bridgeprotocol.io",
+      "location": "USA",
+      "locale": "us",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed4.bridgeprotocol.io",
+      "location": "USA",
+      "locale": "us",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed5.bridgeprotocol.io",
+      "location": "USA",
+      "locale": "us",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed6.bridgeprotocol.io",
+      "location": "USA",
+      "locale": "us",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed7.bridgeprotocol.io",
+      "location": "USA",
+      "locale": "us",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed8.bridgeprotocol.io",
+      "location": "USA",
+      "locale": "us",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed9.bridgeprotocol.io",
+      "location": "USA",
+      "locale": "us",
+      "type": "RPC"
+    },
     {
       "protocol": "http",
       "url": "52.170.2.63",
