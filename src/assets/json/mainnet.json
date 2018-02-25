@@ -106,6 +106,14 @@
       "locale": "us",
       "port": "8080",
       "type": "RPC"
+    }, 
+    {
+      "protocol": "http",
+      "url": "52.170.2.63",
+      "location": "Virginia-USA",
+      "locale": "us",
+      "port": "8080",
+      "type": "RPC"
     }
   ]
 }
