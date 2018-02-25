@@ -130,6 +130,14 @@
       "locale": "us",
       "port": "10333",
       "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "13.84.129.113",
+      "location": "Texas-USA",
+      "locale": "us",
+      "port": "10333",
+      "type": "RPC"
     }
   ]
 }
