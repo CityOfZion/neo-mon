@@ -122,6 +122,14 @@
       "locale": "us",
       "port": "10333",
       "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "52.161.162.145",
+      "location": "Wyoming-USA",
+      "locale": "us",
+      "port": "10333",
+      "type": "RPC"
     }
   ]
 }
