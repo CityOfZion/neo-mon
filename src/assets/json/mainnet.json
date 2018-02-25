@@ -106,6 +106,38 @@
       "locale": "us",
       "port": "8080",
       "type": "RPC"
+    }, 
+    {
+      "protocol": "http",
+      "url": "52.170.2.63",
+      "location": "Virginia-USA",
+      "locale": "us",
+      "port": "10333",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "20.190.59.150",
+      "location": "California-USA",
+      "locale": "us",
+      "port": "10333",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "52.161.162.145",
+      "location": "Wyoming-USA",
+      "locale": "us",
+      "port": "10333",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "13.84.129.113",
+      "location": "Texas-USA",
+      "locale": "us",
+      "port": "10333",
+      "type": "RPC"
     }
   ]
 }
