@@ -112,7 +112,15 @@
       "url": "52.170.2.63",
       "location": "Virginia-USA",
       "locale": "us",
-      "port": "8080",
+      "port": "10333",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "20.190.59.150",
+      "location": "California-USA",
+      "locale": "us",
+      "port": "10333",
       "type": "RPC"
     }
   ]
