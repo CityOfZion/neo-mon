@@ -182,7 +182,7 @@
       "url": "52.170.2.63",
       "location": "Virginia-USA",
       "locale": "us",
-      "port": "10333",
+      "port": "10332",
       "type": "RPC"
     },
     {
@@ -190,7 +190,7 @@
       "url": "20.190.59.150",
       "location": "California-USA",
       "locale": "us",
-      "port": "10333",
+      "port": "10332",
       "type": "RPC"
     },
     {
@@ -198,7 +198,7 @@
       "url": "52.161.162.145",
       "location": "Wyoming-USA",
       "locale": "us",
-      "port": "10333",
+      "port": "10332",
       "type": "RPC"
     },
     {
@@ -206,7 +206,7 @@
       "url": "13.84.129.113",
       "location": "Texas-USA",
       "locale": "us",
-      "port": "10333",
+      "port": "10332",
       "type": "RPC"
     }
   ]
