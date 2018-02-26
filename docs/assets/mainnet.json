@@ -176,7 +176,7 @@
       "location": "USA",
       "locale": "us",
       "type": "RPC"
-    },
+    }, 
     {
       "protocol": "http",
       "url": "52.170.2.63",
@@ -205,38 +205,6 @@
       "protocol": "http",
       "url": "13.84.129.113",
       "location": "Texas-USA",
-      "locale": "us",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed1.redpulse.com",
-      "location": "Frankfurt",
-      "locale": "us",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed2.redpulse.com",
-      "location": "Singapore",
-      "locale": "us",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "pyrpc1.redpulse.com",
-      "location": "Frankfurt",
-      "locale": "us",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "pyrpc2.redpulse.com",
-      "location": "Singapore",
       "locale": "us",
       "port": "10332",
       "type": "RPC"
