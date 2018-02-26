@@ -179,7 +179,7 @@
     },
     {
       "protocol": "http",
-      "url": "52.170.2.63",
+      "url": "seed1.treatail.com",
       "location": "Virginia-USA",
       "locale": "us",
       "port": "10332",
@@ -187,7 +187,7 @@
     },
     {
       "protocol": "http",
-      "url": "20.190.59.150",
+      "url": "seed2.treatail.com",
       "location": "California-USA",
       "locale": "us",
       "port": "10332",
@@ -195,8 +195,8 @@
     },
     {
       "protocol": "http",
-      "url": "52.161.162.145",
-      "location": "Wyoming-USA",
+      "url": "seed3.treatail.com",
+      "location": "Illinois-USA",
       "locale": "us",
       "port": "10332",
       "type": "RPC"
@@ -211,7 +211,7 @@
     },
     {
       "protocol": "http",
-      "url": "13.84.129.113",
+      "url": "seed4.treatail.com",
       "location": "Texas-USA",
       "locale": "us",
       "port": "10332",
