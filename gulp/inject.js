@@ -34,7 +34,7 @@ gulp.task('partials', function () {
 
 gulp.task('ui-assets', function () {
 
-    var a = gulp.src(path.join(conf.paths.assets, '/json/**/*.json'))
+    var a = gulp.src(path.join(conf.paths.dist, '/assets/*.*'))
             .pipe(gulp.dest(conf.paths.tmp + '/serve/assets'));
 
     var b = gulp.src(path.join(conf.paths.assets, '/images/**/*.*'))
