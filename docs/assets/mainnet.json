@@ -251,7 +251,7 @@
     }, {  
       "protocol":"http",
       "url":"seed1.o3node.org:10332",
-      "location":"USA",
+      "location":"Tokyo",
       "address":"54.95.221.179",
       "locale":"jp",
       "type":"RPC"
@@ -259,7 +259,7 @@
    {  
       "protocol":"http",
       "url":"seed2.o3node.org:10332",
-      "location":"USA",
+      "location":"Tokyo",
       "address":"54.95.51.81",
       "locale":"jp",
       "type":"RPC"
@@ -267,7 +267,7 @@
    {  
       "protocol":"http",
       "url":"seed3.o3node.org:10332",
-      "location":"USA",
+      "location":"Tokyo",
       "address":"52.193.202.2",
       "locale":"jp",
       "type":"RPC"
