@@ -203,6 +203,14 @@
     },
     {
       "protocol": "http",
+      "url": "54.66.154.140",
+      "location": "Australia",
+      "locale": "au",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
       "url": "seed4.treatail.com",
       "location": "Texas-USA",
       "locale": "us",

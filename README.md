@@ -32,6 +32,18 @@ src/assets/json/testnet.json
 
 Prepare the changes for deployment by running the Deploy step below.
 
+## Manage Flag Icons
+
+Each endpoint in the json has a locale property. Get the corresponding SVG from
+
+https://github.com/lipis/flag-icon-css/tree/master/flags/1x1
+
+copy the raw source to a new file and add to /src/assets/icons/tsvg . Make sure to follow the same file naming convention.
+
+Remove `id` property from SVG and add ` viewBox="0 0 512 512"`. See one of the other SVGs for an example.
+
+Run the Deploy step below to build and to update GitHub pages /docs folder.
+
 ## Deploy
 
 Neomon is hosted on GitHub pages by publishing to /docs folder. GitHub Settings are configured to use the custom domain: monitor.cityofzion.io
