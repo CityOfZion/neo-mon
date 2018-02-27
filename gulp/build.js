@@ -75,25 +75,11 @@ gulp.task('other', function () {
         .pipe(gulp.dest(path.join(conf.paths.dist, '/')));
 });
 
-gulp.task('dist-assets', function () {
-
-    var a = gulp.src(path.join(conf.paths.assets, '/json/*.json'))
-            .pipe(gulp.dest(conf.paths.dist + '/assets'));
-
-    var b = gulp.src(path.join(conf.paths.assets, '/images/**/*.*'))
-            .pipe(gulp.dest(conf.paths.dist + '/assets/images'));
-
-    var c = gulp.src(path.join(conf.paths.assets, 'CNAME'))
-        .pipe(gulp.dest(conf.paths.dist + '/'));
-
-    return merge(a,b,c);
-});
-
 gulp.task('clean', function () {
-    return del([path.join(conf.paths.dist, '/'), path.join(conf.paths.tmp, '/'), path.join(conf.paths.src, '/*.twig.html')]);
+    return del([path.join(conf.paths.dist, '/scripts/'), path.join(conf.paths.dist, '/styles/'), path.join(conf.paths.dist, '/index.html'), path.join(conf.paths.tmp, '/')]);
 });
 
-gulp.task('build', ['index', 'dist-assets']);
+gulp.task('build', ['index']);
 
 //Configure to be run from dev machine, but build for production env
 gulp.task('build-dist', ['index', 'other']);

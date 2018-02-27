@@ -20,17 +20,16 @@ gulp serve
 
 ## Manage Endpoints
 
-Endpoints can be configured by editing the following JSON files
+Endpoints can be configured by editing the following JSON files directly in the Github Pages web folder. Commits to this folder update the monitor.cityofzion.io web site immediately.
 
 ```
-src/assets/json/mainnet.json
+docs/assets/mainnet.json
 ```
 
 ```
-src/assets/json/testnet.json
+docs/assets/testnet.json
 ```
 
-Prepare the changes for deployment by running the Deploy step below.
 
 ## Manage Flag Icons
 
