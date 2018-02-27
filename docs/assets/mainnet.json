@@ -248,6 +248,32 @@
       "locale": "sg",
       "port": "10332",
       "type": "RPC"
-    }
+    }, {  
+      "protocol":"http",
+      "url":"seed1.o3node.org",
+      "location":"Tokyo",
+      "address":"54.95.221.179",
+      "locale":"jp",
+      "port":"10332",
+      "type":"RPC"
+   },
+   {  
+      "protocol":"http",
+      "url":"seed2.o3node.org",
+      "location":"Tokyo",
+      "address":"54.95.51.81",
+      "locale":"jp",
+      "port":"10332",
+      "type":"RPC"
+   },
+   {  
+      "protocol":"http",
+      "url":"seed3.o3node.org",
+      "location":"Tokyo",
+      "address":"52.193.202.2",
+      "locale":"jp",
+      "port":"10332",
+      "type":"RPC"
+   }
   ]
 }
