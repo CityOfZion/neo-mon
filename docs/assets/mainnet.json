@@ -244,6 +244,38 @@
       "type": "RPC"
     },
     {
+      "protocol": "https",
+      "url": "seed1.redpulse.com",
+      "location": "Frankfurt",
+      "locale": "de",
+      "port": "10331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "seed2.redpulse.com",
+      "location": "Singapore",
+      "locale": "sg",
+      "port": "10331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "pyrpc1.redpulse.com",
+      "location": "Frankfurt",
+      "locale": "de",
+      "port": "10331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "pyrpc2.redpulse.com",
+      "location": "Singapore",
+      "locale": "sg",
+      "port": "10331",
+      "type": "RPC"
+    },
+    {
       "protocol": "http",
       "url": "pyrpc1.redpulse.com",
       "location": "Frankfurt",
@@ -258,7 +290,24 @@
       "locale": "sg",
       "port": "10332",
       "type": "RPC"
-    }, {  
+    },
+    {
+      "service": "pyapi",
+      "type": "REST",
+      "url": "https://pyapi1.redpulse.com",
+      "address": "35.158.246.146",
+      "location": "Frankfurt",
+      "locale": "de"
+    },
+    {
+      "service": "pyapi",
+      "type": "REST",
+      "url": "https://pyapi2.redpulse.com",
+      "address": "52.76.36.115",
+      "location": "Singapore",
+      "locale": "sg"
+    },
+    {
       "protocol":"http",
       "url":"seed1.o3node.org",
       "location":"Tokyo",
@@ -267,7 +316,7 @@
       "port":"10332",
       "type":"RPC"
    },
-   {  
+   {
       "protocol":"http",
       "url":"seed2.o3node.org",
       "location":"Tokyo",
@@ -276,7 +325,7 @@
       "port":"10332",
       "type":"RPC"
    },
-   {  
+   {
       "protocol":"http",
       "url":"seed3.o3node.org",
       "location":"Tokyo",
