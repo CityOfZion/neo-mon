@@ -57,26 +57,27 @@
             <tr>
                 <th class="stats-table__header" style="width: 20px;">
                 </th>
-                <th class="stats-table__header" style="width: 15%;">
-                    <div>
-                        <span>Endpoint</span>
-                    </div>
+                <th class="stats-table__header" style="width: 10%;">
+                    Endpoint
                 </th>
-                <th class="stats-table__header" style="width: 15%;">
+                <th class="stats-table__header" style="width: 10%;">
                     Type
                 </th>
-                <th class="stats-table__header" style="width: 15%;">
+                <th title="Latency in milliseconds" class="stats-table__header" style="width: 10%;">
+                    Latency <neo-icon class="icon-button__tsvg">circle-info</neo-icon>
+                </th>
+                <th class="stats-table__header" style="width: 10%;">
                     Version
                 </th>
                 <th class="stats-table__header" style="width: 220px;">
                     Is It Up?
                     <i class="fa fa-toggle-on stats-table__icon"></i>
                 </th>
-                <th class="stats-table__header" style="width: 15%;">
+                <th class="stats-table__header" style="width: 10%;">
                     Block Height
                     <i class="fa fa-th-large stats-table__icon"></i>
                 </th>
-                <th class="stats-table__header" style="width: 15%;">
+                <th class="stats-table__header" style="width: 10%;">
                     Peers
                     <i class="fa fa-users stats-table__icon"></i>
                 </th>
@@ -84,9 +85,10 @@
             </thead>
             <tbody class="stats-table-body">
                 <tr ng-repeat="endPoint in vm.netStats.endPoints" class="{{ endPoint | statusClass : vm.netStats.bestBlock }}" >
-                    <td class="stats-table__cell"><neo-icon class="icon-button__tsvg" name="{{ 'flag-' + endPoint.locale }}"></neo-icon></td>
+                    <td class="stats-table__cell" title="{{ endPoint.location }}"><neo-icon class="icon-button__tsvg" name="{{ 'flag-' + endPoint.locale }}"></neo-icon></td>
                     <td class="stats-table__cell">{{ endPoint.name }}</td>
                     <td class="stats-table__cell">{{ endPoint.type }}</td>
+                    <td class="stats-table__cell">{{ endPoint.latency }}</td>
                     <td class="stats-table__cell">{{ (endPoint.version && endPoint.version.useragent) || '?' }}</td>
                     <td class="stats-table__cell">
                         <div ng-if="endPoint.isItUp">yes</div>

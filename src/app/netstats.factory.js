@@ -144,6 +144,8 @@
 
                         bestBlock = Math.max(bestBlock, result);
 
+                        endPoint.latency = endPoint.httpService.latency();
+
                         if (bestBlock > netStats.bestBlock) {
 
                             netStats.bestBlock = bestBlock;
@@ -267,7 +269,7 @@
                         url += (inst.name === 'MainNet') ? ':10331' : ':20331';
                     }
 
-                    httpService = neo.node(url);
+                    httpService = neo.node({ baseUrl: url, monitorLatency: true});
                 }
                 else if (type === 'REST') {
 
