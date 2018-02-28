@@ -292,22 +292,6 @@
       "type": "RPC"
     },
     {
-      "service": "pyapi",
-      "type": "REST",
-      "url": "https://pyapi1.redpulse.com",
-      "address": "35.158.246.146",
-      "location": "Frankfurt",
-      "locale": "de"
-    },
-    {
-      "service": "pyapi",
-      "type": "REST",
-      "url": "https://pyapi2.redpulse.com",
-      "address": "52.76.36.115",
-      "location": "Singapore",
-      "locale": "sg"
-    },
-    {
       "protocol":"http",
       "url":"seed1.o3node.org",
       "location":"Tokyo",
