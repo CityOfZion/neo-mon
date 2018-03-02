@@ -64,7 +64,7 @@
                     Type
                 </th>
                 <th title="Latency in milliseconds" class="stats-table__header" style="width: 10%;">
-                    Latency <neo-icon class="icon-button__tsvg">circle-info</neo-icon>
+                    Latency (ms)
                 </th>
                 <th class="stats-table__header" style="width: 10%;">
                     Version
@@ -92,9 +92,15 @@
                     <td class="stats-table__cell">{{ (endPoint.version && endPoint.version.useragent) || '?' }}</td>
                     <td class="stats-table__cell">
                         <div ng-if="endPoint.isItUp">yes</div>
-                        <div class="color-offline" ng-if="!endPoint.isItUp">offline</div>
+                        <div class="color-offline" ng-if="!endPoint.isItUp">
+                            <span>unreachable</span>
+                            <span ng-if="endPoint.lastTimeConnected"> - Last connected {{ endPoint.lastTimeConnected }} </span>
+                        </div>
                     </td>
-                    <td class="stats-table__cell">#{{ endPoint.lastBlock.toLocaleString() }}</td>
+                    <td class="stats-table__cell">
+                        <span>#{{ endPoint.lastBlock.toLocaleString() }}</span>
+                        <span ng-if="vm.netStats.bestBlock > endPoint.lastBlock"> ({{(endPoint.lastBlock - vm.netStats.bestBlock).toLocaleString() }})</span>
+                    </td>
                     <td class="stats-table__cell">{{ endPoint.peerCount }}</td>
                 </tr>
          

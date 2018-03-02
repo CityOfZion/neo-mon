@@ -145,6 +145,7 @@
                         bestBlock = Math.max(bestBlock, result);
 
                         endPoint.latency = endPoint.httpService.latency();
+                        endPoint.hasConnectedBefore = true;
 
                         if (bestBlock > netStats.bestBlock) {
 
@@ -182,6 +183,7 @@
                         if (endPoint.isItUp) {
                             endPoint.isItUp = false;
                             sortEndPoints(netStats);
+                            updateLastConnectedTime(endPoint);
                         }
                     });
                 }
@@ -189,6 +191,13 @@
 
                     endPoint.httpService.poll(netStats.pollingPolicy).getCurrentBlockHeight().notify(function (result) {
                         endPoint.lastBlock = result.height;
+                        endPoint.latency = endPoint.httpService.latency();
+                        endPoint.hasConnectedBefore = true;
+
+                        if (result.hasOwnProperty('version')) {
+                            endPoint.version.useragent = result.version;
+                        }
+
                         if (!endPoint.isItUp) {
                             endPoint.isItUp = true;
                             sortEndPoints(netStats);
@@ -199,6 +208,7 @@
                             endPoint.isItUp = false;
                             sortEndPoints(netStats);
                         }
+                        updateLastConnectedTime(endPoint);
                     });
                 }
             });
@@ -236,9 +246,19 @@
                     .catch(function () {
                         endPoint.version.useragent = '/ < 2.4.1 /';
                     });
-
                 }
             });
+        }
+
+        function updateLastConnectedTime (endPoint) {
+
+            endPoint.latency = undefined;
+
+            if (endPoint.hasConnectedBefore) {
+                var diff = Date.now() - endPoint.httpService.lastConnectedTime();
+
+                endPoint.lastTimeConnected = diff < 60 ? diff + ' s ago' : moment.duration(diff, 'ms').humanize() + ' ago';
+            }
         }
         
         //=======================================================//
@@ -259,30 +279,29 @@
                 if (type === 'RPC') {
                     url = site.protocol + '://' + site.url;
 
-                    if (site.port) {
-                        url += ':' + site.port;
-                    }
-                    else if (site.protocol === 'http') {
-                        url += (inst.name === 'MainNet') ? ':10332' : ':20332';
-                    }
-                    else {
-                        url += (inst.name === 'MainNet') ? ':10331' : ':20331';
-                    }
+                    if (site.url.indexOf(':') < 0) {
 
+                        if (site.port) {
+                            url += ':' + site.port;
+                        }
+                        else if (site.protocol === 'http') {
+                            url += (inst.name === 'MainNet') ? ':10332' : ':20332';
+                        }
+                        else {
+                            url += (inst.name === 'MainNet') ? ':10331' : ':20331';
+                        }
+                    }
                     httpService = neo.node({ baseUrl: url, monitorLatency: true});
                 }
                 else if (type === 'REST') {
 
                     url = site.url;
 
-                    if (site.service === 'antChain') {
-                        httpService = neo.antChain(url);
-                    }
-                    else if (site.service === 'neoScan') {
-                        httpService = neo.neoScan(url);
-                    }
-                    else if (site.service === 'neon') {
-                        httpService = neo.neon(url);
+                    //antChain, neoScan, neon, pyrest, etc
+                    var resolveRestService = neo[site.service];
+
+                    if (resolveRestService) {
+                        httpService = resolveRestService({ baseUrl: url, monitorLatency: true});
                     }
                     else {
                         throw new Error('Unknown REST Service: ' + site.service);

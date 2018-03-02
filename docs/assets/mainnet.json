@@ -19,6 +19,22 @@
       "type": "REST"
     },
     {
+      "service": "pyrest",
+      "type": "REST",
+      "url": "https://pyrest1.redpulse.com/v1/",
+      "address": "35.158.246.146",
+      "location": "Frankfurt",
+      "locale": "de"
+    },
+    {
+      "service": "pyrest",
+      "type": "REST",
+      "url": "https://pyrest2.redpulse.com/v1/",
+      "address": "52.76.36.115",
+      "location": "Singapore",
+      "locale": "sg"
+    },
+    {
       "protocol": "https",
       "url": "seed1.neo.org",
       "location": "China",
