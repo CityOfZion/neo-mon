@@ -179,12 +179,13 @@
 
                         return endPoint;
                     })
-                    .catch(function () {
+                    .notifyCatch(function () {
                         if (endPoint.isItUp) {
                             endPoint.isItUp = false;
                             sortEndPoints(netStats);
-                            updateLastConnectedTime(endPoint);
                         }
+
+                        updateLastConnectedTime(endPoint);
                     });
                 }
                 else { //REST
@@ -203,11 +204,12 @@
                             sortEndPoints(netStats);
                         }
                     })
-                    .catch(function () {
+                    .notifyCatch(function () {
                         if (endPoint.isItUp) {
                             endPoint.isItUp = false;
                             sortEndPoints(netStats);
                         }
+
                         updateLastConnectedTime(endPoint);
                     });
                 }
@@ -244,7 +246,9 @@
                         endPoint.version = result;
                     })
                     .catch(function () {
-                        endPoint.version.useragent = '/ < 2.4.1 /';
+                        if (endPoint.isItUp) {
+                            endPoint.version.useragent = '/ < 2.4.1 /';
+                        }
                     });
                 }
             });
