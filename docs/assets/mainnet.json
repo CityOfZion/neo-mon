@@ -333,6 +333,38 @@
       "locale":"jp",
       "port":"10332",
       "type":"RPC"
+   },
+   {
+      "protocol":"https",
+      "url":"pyrpc1.narrative.network",
+      "location":"Texas",
+      "locale":"us",
+      "port":"443",
+      "type":"RPC"
+   },
+   {
+      "protocol":"https",
+      "url":"pyrpc2.narrative.network",
+      "location":"New York",
+      "locale":"us",
+      "port":"443",
+      "type":"RPC"
+   },
+   {
+      "protocol":"https",
+      "url":"pyrpc3.narrative.network",
+      "location":"London",
+      "locale":"gb",
+      "port":"443",
+      "type":"RPC"
+   },
+   {
+      "protocol":"https",
+      "url":"pyrpc4.narrative.network",
+      "location":"Amsterdam",
+      "locale":"nl",
+      "port":"443",
+      "type":"RPC"
    }
   ]
 }
