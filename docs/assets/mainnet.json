@@ -343,12 +343,26 @@
       "type":"RPC"
    },
    {
+      "service": "pyrest",
+      "url":"https://pyrest1.narrative.network/v1/",
+      "location":"Texas",
+      "locale":"us",
+      "type":"REST"
+   },
+   {
       "protocol":"https",
       "url":"pyrpc2.narrative.network",
       "location":"New York",
       "locale":"us",
       "port":"443",
       "type":"RPC"
+   },
+   {
+      "service": "pyrest",
+      "url":"https://pyrest2.narrative.network/v1/",
+      "location":"New York",
+      "locale":"us",
+      "type":"REST"
    },
    {
       "protocol":"https",
@@ -359,12 +373,26 @@
       "type":"RPC"
    },
    {
+      "service": "pyrest",
+      "url":"https://pyrest3.narrative.network/v1/",
+      "location":"London",
+      "locale":"gb",
+      "type":"REST"
+   },
+   {
       "protocol":"https",
       "url":"pyrpc4.narrative.network",
       "location":"Amsterdam",
       "locale":"nl",
       "port":"443",
       "type":"RPC"
+   },
+   {
+      "service": "pyrest",
+      "url":"https://pyrest4.narrative.network/v1/",
+      "location":"Amsterdam",
+      "locale":"nl",
+      "type":"REST"
    },
    {
      "protocol": "http",
