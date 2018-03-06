@@ -429,6 +429,24 @@
      "locale": "br",
      "port": "10332",
      "type": "RPC"
-   }    
+   },
+   {
+    "protocol": "http",
+    "url": "seed1.eu-west-2.fiatpeg.com",
+    "location": "London",
+    "address": "52.56.153.154",
+    "locale": "uk",
+    "port": "10332",
+    "type": "RPC"
+   },
+   {
+    "protocol": "http",
+    "url": "seed1.eu-central-1.fiatpeg.com",
+    "location": "Frankfurt",
+    "address": "18.196.188.214",
+    "locale": "de",
+    "port": "10332",
+    "type": "RPC"
+   }
   ]
 }
