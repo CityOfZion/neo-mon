@@ -435,7 +435,7 @@
     "url": "seed1.eu-west-2.fiatpeg.com",
     "location": "London",
     "address": "52.56.153.154",
-    "locale": "uk",
+    "locale": "gb",
     "port": "10332",
     "type": "RPC"
    },
