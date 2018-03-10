@@ -395,42 +395,6 @@
       "type":"REST"
    },
    {
-     "protocol": "http",
-     "url": "seed1.aphelion.org",
-     "location": "London",
-     "address": "35.178.126.129",
-     "locale": "gb",
-     "port": "10332",
-     "type": "RPC"
-   },
-   {
-     "protocol": "http",
-     "url": "seed2.aphelion.org",
-     "location": "Frankfurt",
-     "address": "18.197.136.206",
-     "locale": "de",
-     "port": "10332",
-     "type": "RPC"
-   },
-   {
-     "protocol": "http",
-     "url": "seed3.aphelion.org",
-     "location": "Seoul",
-     "address": "52.78.136.233",
-     "locale": "kr",
-     "port": "10332",
-     "type": "RPC"
-   },
-   {
-     "protocol": "http",
-     "url": "seed4.aphelion.org",
-     "location": "Sao Paulo",
-     "address": "54.233.224.215",
-     "locale": "br",
-     "port": "10332",
-     "type": "RPC"
-   },
-   {
     "protocol": "http",
     "url": "seed1.eu-west-2.fiatpeg.com",
     "location": "London",
