@@ -16,7 +16,7 @@
             this.endPoints = undefined;
             this.lastBlockIntervalId = undefined;
 
-            this.avgBlockTime = '24.2 s';
+            this.avgBlockTime = '15.0 s';
             this.bestBlock = 0;
             this.lastBlockTime = 0;
             this.lastBlockLabel = '';
@@ -150,6 +150,7 @@
                         if (bestBlock > netStats.bestBlock) {
 
                             netStats.bestBlock = bestBlock;
+                            window.document.title = 'NEO #' + bestBlock.toLocaleString();
 
                             if (!netStats.firstInterval) {
                                 var newTime = moment();
