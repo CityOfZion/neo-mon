@@ -433,7 +433,7 @@
    { 
      "protocol": "http", 
      "url": "nodehost.ddns.net",
-     "location": "Switzerland
+     "location": "Switzerland",
      "address": "178.195.151.229", 
      "locale": "ch",
      "port": "10332", 
