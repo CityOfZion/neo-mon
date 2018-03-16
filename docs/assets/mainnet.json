@@ -528,6 +528,69 @@
      "locale": "fr",
      "port": "10332",
      "type": "RPC"
-   }    
+   },
+   {
+    "protocol": "http",
+    "url": "seed1.amchart.io",
+    "location": "Ohio",
+    "address": "18.188.47.29",
+    "locale": "us",
+    "port": "10332",
+    "type": "RPC"
+   },
+   {
+    "protocol": "http",
+    "url": "seed2.amchart.io",
+    "location": "California",
+    "address": "13.57.244.250",
+    "locale": "us",
+    "port": "10332",
+    "type": "RPC"
+   },
+   {
+    "protocol": "http",
+    "url": "seed3.amchart.io",
+    "location": "London",
+    "address": "35.176.227.200",
+    "locale": "gb",
+    "port": "10332",
+    "type": "RPC"
+   },
+   {
+    "protocol": "http",
+    "url": "seed4.amchart.io",
+    "location": "Frankfurt",
+    "address": "18.195.60.157",
+    "locale": "de",
+    "port": "10332",
+    "type": "RPC" 
+   },
+   {
+    "protocol": "http",
+    "url": "seed5.amchart.io",
+    "location": "Singapore",
+    "address": "52.77.218.171",
+    "locale": "sg",
+    "port": "10332",
+    "type": "RPC"
+   },
+   {
+    "protocol": "http",
+    "url": "seed6.amchart.io",
+    "location": "Seoul",
+    "address": "52.78.215.113",
+    "locale": "kr",
+    "port": "10332",
+    "type": "RPC"
+   },
+   {
+    "protocol": "http",
+    "url": "seed7.amchart.io",
+    "location": "Mumbai",
+    "address": "13.126.71.121",
+    "locale": "in",
+    "port": "10332",
+    "type": "RPC"
+   }
   ]
 }
