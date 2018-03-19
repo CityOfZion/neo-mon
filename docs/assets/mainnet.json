@@ -591,6 +591,15 @@
     "locale": "in",
     "port": "10332",
     "type": "RPC"
+   },
+   {
+    "protocol": "http",
+    "url": "seed01.cryptomunki.tech",
+    "location": "Hong Kong",
+    "address": "40.83.123.178",
+    "locale": "hk",
+    "port": "10332",
+    "type": "RPC"
    }
   ]
 }
