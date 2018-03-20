@@ -558,15 +558,6 @@
    },
    {
     "protocol": "http",
-    "url": "seed4.amchart.io",
-    "location": "Frankfurt",
-    "address": "18.195.60.157",
-    "locale": "de",
-    "port": "10332",
-    "type": "RPC" 
-   },
-   {
-    "protocol": "http",
     "url": "seed5.amchart.io",
     "location": "Singapore",
     "address": "52.77.218.171",
@@ -588,6 +579,15 @@
     "url": "seed7.amchart.io",
     "location": "Mumbai",
     "address": "13.126.71.121",
+    "locale": "in",
+    "port": "10332",
+    "type": "RPC"
+   },
+   {
+    "protocol": "http",
+    "url": "seed8.amchart.io",
+    "location": "Mumbai",
+    "address": "13.127.93.79",
     "locale": "in",
     "port": "10332",
     "type": "RPC"
