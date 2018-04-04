@@ -426,50 +426,50 @@
       "locale":"nl",
       "type":"REST"
    },
-   { 
-     "protocol": "http", 
-     "url": "seed1.aphelion-neo.com", 
-     "location": "London", 
-     "address": "35.178.126.129", 
-     "locale": "gb", 
-     "port": "10332", 
-     "type": "RPC" 
-   }, 
-   { 
-     "protocol": "http", 
-     "url": "seed2.aphelion-neo.com", 
-     "location": "Frankfurt", 
-     "address": "18.197.136.206", 
-     "locale": "de", 
-     "port": "10332", 
-     "type": "RPC" 
-   }, 
-   { 
-     "protocol": "http", 
-     "url": "seed3.aphelion-neo.com", 
-     "location": "Seoul", 
-     "address": "52.78.136.233", 
-     "locale": "kr", 
-     "port": "10332", 
-     "type": "RPC" 
-   }, 
-   { 
-     "protocol": "http", 
-     "url": "seed4.aphelion-neo.com", 
-     "location": "Sao Paulo", 
-     "address": "54.233.224.215", 
-     "locale": "br", 
-     "port": "10332", 
-     "type": "RPC" 
-   },   
-   { 
-     "protocol": "http", 
+   {
+     "protocol": "http",
+     "url": "seed1.aphelion-neo.com",
+     "location": "London",
+     "address": "35.178.126.129",
+     "locale": "gb",
+     "port": "10332",
+     "type": "RPC"
+   },
+   {
+     "protocol": "http",
+     "url": "seed2.aphelion-neo.com",
+     "location": "Frankfurt",
+     "address": "18.197.136.206",
+     "locale": "de",
+     "port": "10332",
+     "type": "RPC"
+   },
+   {
+     "protocol": "http",
+     "url": "seed3.aphelion-neo.com",
+     "location": "Seoul",
+     "address": "52.78.136.233",
+     "locale": "kr",
+     "port": "10332",
+     "type": "RPC"
+   },
+   {
+     "protocol": "http",
+     "url": "seed4.aphelion-neo.com",
+     "location": "Sao Paulo",
+     "address": "54.233.224.215",
+     "locale": "br",
+     "port": "10332",
+     "type": "RPC"
+   },
+   {
+     "protocol": "http",
      "url": "seed1.nodeneo.ch",
      "location": "Switzerland",
-     "address": "178.195.151.229", 
+     "address": "178.195.151.229",
      "locale": "ch",
-     "port": "10332", 
-     "type": "RPC" 
+     "port": "10332",
+     "type": "RPC"
    },
    {
      "protocol": "http",
@@ -641,6 +641,15 @@
     "locale": "au",
     "port": "10332",
     "type": "RPC"
-   }
+    },
+    {
+     "protocol": "http",
+     "url": "pyrpc1.neeeo.org",
+     "location": "US",
+     "address": "13.59.152.165",
+     "locale": "us",
+     "port": "10332",
+     "type": "RPC"
+    }   
   ]
 }
