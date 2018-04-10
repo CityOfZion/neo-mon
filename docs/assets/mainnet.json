@@ -448,7 +448,7 @@
    },
    {
      "protocol": "http",
-     "url": "seed1.nodeneo.ch",
+     "url": "pyrpc1.nodeneo.ch",
      "location": "Switzerland",
      "address": "178.195.151.229",
      "locale": "ch",
