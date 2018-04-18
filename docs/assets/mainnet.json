@@ -556,69 +556,6 @@
    },
    {
     "protocol": "http",
-    "url": "seed2.amchart.io",
-    "location": "California",
-    "address": "13.57.244.250",
-    "locale": "us",
-    "port": "10332",
-    "type": "RPC"
-   },
-   {
-    "protocol": "http",
-    "url": "seed3.amchart.io",
-    "location": "London",
-    "address": "35.176.227.200",
-    "locale": "gb",
-    "port": "10332",
-    "type": "RPC"
-   },
-   {
-    "protocol": "http",
-    "url": "seed5.amchart.io",
-    "location": "Singapore",
-    "address": "52.77.218.171",
-    "locale": "sg",
-    "port": "10332",
-    "type": "RPC"
-   },
-   {
-    "protocol": "http",
-    "url": "seed6.amchart.io",
-    "location": "Seoul",
-    "address": "52.78.215.113",
-    "locale": "kr",
-    "port": "10332",
-    "type": "RPC"
-   },
-   {
-    "protocol": "http",
-    "url": "seed7.amchart.io",
-    "location": "Mumbai",
-    "address": "13.126.71.121",
-    "locale": "in",
-    "port": "10332",
-    "type": "RPC"
-   },
-   {
-    "protocol": "http",
-    "url": "seed8.amchart.io",
-    "location": "Mumbai",
-    "address": "13.127.93.79",
-    "locale": "in",
-    "port": "10332",
-    "type": "RPC"
-   },
-   {
-    "protocol": "http",
-    "url": "seed01.cryptomunki.tech",
-    "location": "Hong Kong",
-    "address": "40.83.123.178",
-    "locale": "cn",
-    "port": "10332",
-    "type": "RPC"
-   },
-   {
-    "protocol": "http",
     "url": "seed02.cryptomunki.tech",
     "location": "Australia",
     "address": "52.65.28.120",
