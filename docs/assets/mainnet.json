@@ -237,22 +237,6 @@
     },
     {
       "protocol": "http",
-      "url": "seed1.treatail.com",
-      "location": "Virginia-USA",
-      "locale": "us",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed2.treatail.com",
-      "location": "California-USA",
-      "locale": "us",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
       "url": "54.66.154.140",
       "location": "Australia",
       "locale": "au",
