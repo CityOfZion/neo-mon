@@ -157,82 +157,50 @@
     },
     {
       "protocol": "http",
-      "url": "seed0.bridgeprotocol.io",
+      "url": "node1.ams2.bridgeprotocol.io",
+      "location": "Netherlands",
+      "address": "198.211.127.188",
+      "locale": "nl",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "node2.ams2.bridgeprotocol.io",
+      "location": "Netherlands",
+      "address": "37.139.22.119",
+      "locale": "nl",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "node1.nyc3.bridgeprotocol.io",
       "location": "USA",
-      "address": "159.65.111.146",
+      "address": "165.227.186.72",
       "locale": "us",
       "type": "RPC"
     },
     {
       "protocol": "http",
-      "url": "seed1.bridgeprotocol.io",
+      "url": "node2.nyc3.bridgeprotocol.io",
       "location": "USA",
-      "address": "165.227.211.101",
+      "address": "159.65.244.191",
       "locale": "us",
       "type": "RPC"
     },
     {
       "protocol": "http",
-      "url": "seed2.bridgeprotocol.io",
-      "location": "USA",
-      "address": "165.227.212.14",
-      "locale": "us",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed3.bridgeprotocol.io",
-      "location": "Canada",
-      "address": "159.89.116.154",
-      "locale": "ca",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed4.bridgeprotocol.io",
-      "location": "Germany",
-      "address": "159.65.124.174",
-      "locale": "de",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed5.bridgeprotocol.io",
-      "location": "Germany",
-      "address": "159.65.124.175",
-      "locale": "de",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed6.bridgeprotocol.io",
+      "url": "node1.sgp1.bridgeprotocol.io",
       "location": "Singapore",
-      "address": "159.89.199.207",
+      "address": "206.189.94.221",
       "locale": "sg",
       "type": "RPC"
     },
     {
       "protocol": "http",
-      "url": "seed7.bridgeprotocol.io",
+      "url": "node2.sgp1.bridgeprotocol.io",
       "location": "Singapore",
-      "address": "159.89.203.177",
+      "address": "206.189.152.158",
       "locale": "sg",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed8.bridgeprotocol.io",
-      "location": "India",
-      "address": "159.89.174.42",
-      "locale": "in",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed9.bridgeprotocol.io",
-      "location": "India",
-      "address": "159.89.161.26",
-      "locale": "in",
       "type": "RPC"
     },
     {
@@ -555,6 +523,6 @@
      "locale": "us",
      "port": "10332",
      "type": "RPC"
-    }   
+    }
   ]
 }
