@@ -433,6 +433,15 @@
      "locale": "us",
      "port": "10332",
      "type": "RPC"
+    },
+    {
+     "protocol": "https",
+     "url": "seed1.spotcoin.com",
+     "location": "Frankfurt",
+     "address": "18.194.110.81",
+     "locale": "de",
+     "port": "10332",
+     "type": "RPC"
     }
   ]
 }
