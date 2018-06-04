@@ -51,6 +51,14 @@
       "type": "RPC"
     },
     {
+      "protocol": "http",
+      "url": "seed1.travala.com",
+      "location": "Singapore",
+      "port": "10332",
+      "locale": "sg",
+      "type": "RPC"
+    },
+    {
       "service": "pyrest",
       "type": "REST",
       "url": "https://pyrest1.redpulse.com/v1/",
