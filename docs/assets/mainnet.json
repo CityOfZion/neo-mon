@@ -51,6 +51,41 @@
       "type": "RPC"
     },
     {
+      "protocol": "http",
+      "url": "seed1.travala.com",
+      "location": "Singapore",
+      "address": "52.74.91.157",
+      "locale": "sg",
+      "port": "10332",
+      "type": "RPC"
+    },{
+      "protocol": "http",
+      "url": "seed2.travala.com",
+      "location": "Seoul",
+      "address": "13.209.29.171",
+      "locale": "kr",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed3.travala.com",
+      "location": "Canada",
+      "address": "35.182.220.56",
+      "locale": "ca",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed4.travala.com",
+      "location": "London",
+      "address": "52.56.132.44",
+      "locale": "gb",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
       "service": "pyrest",
       "type": "REST",
       "url": "https://pyrest1.redpulse.com/v1/",
