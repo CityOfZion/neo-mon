@@ -331,7 +331,7 @@
    },
    {
       "protocol":"https",
-      "url":"pyrpc1.narrative.network",
+      "url":"pyrpc1.narrative.org",
       "location":"Texas",
       "locale":"us",
       "port":"443",
@@ -339,14 +339,14 @@
    },
    {
       "service": "pyrest",
-      "url":"https://pyrest1.narrative.network/v1/",
+      "url":"https://pyrest1.narrative.org/v1/",
       "location":"Texas",
       "locale":"us",
       "type":"REST"
    },
    {
       "protocol":"https",
-      "url":"pyrpc2.narrative.network",
+      "url":"pyrpc2.narrative.org",
       "location":"New York",
       "locale":"us",
       "port":"443",
@@ -354,14 +354,14 @@
    },
    {
       "service": "pyrest",
-      "url":"https://pyrest2.narrative.network/v1/",
+      "url":"https://pyrest2.narrative.org/v1/",
       "location":"New York",
       "locale":"us",
       "type":"REST"
    },
    {
       "protocol":"https",
-      "url":"pyrpc3.narrative.network",
+      "url":"pyrpc3.narrative.org",
       "location":"London",
       "locale":"gb",
       "port":"443",
@@ -369,14 +369,14 @@
    },
    {
       "service": "pyrest",
-      "url":"https://pyrest3.narrative.network/v1/",
+      "url":"https://pyrest3.narrative.org/v1/",
       "location":"London",
       "locale":"gb",
       "type":"REST"
    },
    {
       "protocol":"https",
-      "url":"pyrpc4.narrative.network",
+      "url":"pyrpc4.narrative.org",
       "location":"Amsterdam",
       "locale":"nl",
       "port":"443",
@@ -384,7 +384,7 @@
    },
    {
       "service": "pyrest",
-      "url":"https://pyrest4.narrative.network/v1/",
+      "url":"https://pyrest4.narrative.org/v1/",
       "location":"Amsterdam",
       "locale":"nl",
       "type":"REST"
