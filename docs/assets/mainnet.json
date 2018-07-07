@@ -469,6 +469,14 @@
      "locale": "de",
      "port": "10332",
      "type": "RPC"
-    }
+    },
+    {
+      "protocol": "http",
+      "url": "rustylogic.ddns.net",
+      "location": "London",
+      "locale": "gb",
+      "port": "10332",
+      "type": "RPC"
+    }    
   ]
 }
