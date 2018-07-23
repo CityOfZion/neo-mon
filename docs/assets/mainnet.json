@@ -303,30 +303,12 @@
       "type": "RPC"
     },
     {
-      "protocol":"http",
-      "url":"seed1.o3node.org",
+      "protocol":"https",
+      "url":"seed.o3node.org",
       "location":"Tokyo",
-      "address":"54.95.221.179",
+      "address":"13.230.26.79",
       "locale":"jp",
-      "port":"10332",
-      "type":"RPC"
-   },
-   {
-      "protocol":"http",
-      "url":"seed2.o3node.org",
-      "location":"Tokyo",
-      "address":"54.95.51.81",
-      "locale":"jp",
-      "port":"10332",
-      "type":"RPC"
-   },
-   {
-      "protocol":"http",
-      "url":"seed3.o3node.org",
-      "location":"Tokyo",
-      "address":"52.193.202.2",
-      "locale":"jp",
-      "port":"10332",
+      "port":"10331",
       "type":"RPC"
    },
    {
