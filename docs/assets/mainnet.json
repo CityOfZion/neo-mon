@@ -51,6 +51,14 @@
       "type": "RPC"
     },
     {
+      "protocol": "https",
+      "url": "seed5.switcheo.network",
+      "location": "Singapore",
+      "port": "10331",
+      "locale": "sg",
+      "type": "RPC"
+    },
+    {
       "protocol": "http",
       "url": "seed1.travala.com",
       "location": "Singapore",
