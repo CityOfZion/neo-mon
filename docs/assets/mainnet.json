@@ -426,15 +426,6 @@
    },
    {
     "protocol": "http",
-    "url": "seed1.amchart.io",
-    "location": "Ohio",
-    "address": "18.188.47.29",
-    "locale": "us",
-    "port": "10332",
-    "type": "RPC"
-   },
-   {
-    "protocol": "http",
     "url": "seed02.cryptomunki.tech",
     "location": "Australia",
     "address": "52.65.28.120",
