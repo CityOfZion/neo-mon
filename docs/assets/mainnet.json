@@ -10,14 +10,7 @@
       "locale": "us",
       "type": "REST"
     },
-    {
-      "service": "neon",
-      "url": "http://api.neonwallet.com/v2/",
-      "location": "United States",
-      "address": "54.221.228.80",
-      "locale": "us",
-      "type": "REST"
-    },
+    {,
     {
       "protocol": "https",
       "url": "seed1.switcheo.network",
