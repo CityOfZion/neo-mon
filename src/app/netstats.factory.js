@@ -190,8 +190,8 @@
                     });
                 }
                 else { //REST
-
                     endPoint.httpService.poll(netStats.pollingPolicy).getCurrentBlockHeight().notify(function (result) {
+                        
                         endPoint.lastBlock = result.height;
                         endPoint.latency = endPoint.httpService.latency();
                         endPoint.hasConnectedBefore = true;
