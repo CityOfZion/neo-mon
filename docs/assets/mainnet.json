@@ -191,7 +191,7 @@
       "type": "RPC"
     },
         {
-      "protocol": "http",
+      "protocol": "https",
       "url": "seed0.cityofzion.io",
       "location": "CH",
       "locale": "ch",
@@ -199,7 +199,7 @@
       "type": "RPC"
     },
         {
-      "protocol": "http",
+      "protocol": "https",
       "url": "seed6.cityofzion.io",
       "location": "CH",
       "locale": "ch",
@@ -207,7 +207,7 @@
       "type": "RPC"
     },
         {
-      "protocol": "http",
+      "protocol": "https",
       "url": "seed7.cityofzion.io",
       "location": "AT",
       "locale": "at",
@@ -215,7 +215,7 @@
       "type": "RPC"
     },
         {
-      "protocol": "http",
+      "protocol": "https",
       "url": "seed8.cityofzion.io",
       "location": "AT",
       "locale": "at",
@@ -223,7 +223,7 @@
       "type": "RPC"
     },
         {
-      "protocol": "http",
+      "protocol": "https",
       "url": "seed9.cityofzion.io",
       "location": "AT",
       "locale": "at",
