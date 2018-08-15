@@ -717,7 +717,8 @@ function neoNotification(options) {
   serviceOptions(inst, 'neoNotification', options);
 
   // inst.serviceBaseUrl=inst.serviceBaseUrl.replace("http://", "https://cors-anywhere.herokuapp.com/");
-  inst.serviceBaseUrl=inst.serviceBaseUrl.replace("http://", "http://");
+  // inst.serviceBaseUrl=inst.serviceBaseUrl.replace("http://", "http://");
+  inst.serviceBaseUrl=inst.serviceBaseUrl.replace("http://", "https://cors-proxy.f27.ventures/");
 
   inst.getCurrentBlockHeight = getCurrentBlockHeight$4;
 
