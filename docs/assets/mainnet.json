@@ -450,6 +450,38 @@
       "locale": "gb",
       "port": "10332",
       "type": "RPC"
+    },
+    {
+      "service": "neoNotification",
+      "url": "http://notifications1.neeeo.org/v1/notifications/block/",
+      "location": "United States",
+      "address": "18.191.192.189",
+      "locale": "us",
+      "type": "REST"
+    },
+    {
+      "service": "neoNotification",
+      "url": "http://notifications2.neeeo.org/v1/notifications/block/",
+      "location": "United States",
+      "address": "18.191.192.189",
+      "locale": "us",
+      "type": "REST"
+    },
+    {
+      "service": "neoNotification",
+      "url": "http://notifications3.neeeo.org/v1/notifications/block/",
+      "location": "United States",
+      "address": "18.191.192.189",
+      "locale": "us",
+      "type": "REST"
+    },
+    {
+      "service": "neoNotification",
+      "url": "http://notifications4.neeeo.org/v1/notifications/block/",
+      "location": "United States",
+      "address": "18.191.192.189",
+      "locale": "us",
+      "type": "REST"
     }
   ]
 }
