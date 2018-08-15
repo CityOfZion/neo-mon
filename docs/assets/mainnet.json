@@ -457,15 +457,6 @@
      "type": "RPC"
    },
     {
-     "protocol": "http",
-     "url": "pyrpc1.neeeo.org",
-     "location": "US",
-     "address": "13.59.152.165",
-     "locale": "us",
-     "port": "10332",
-     "type": "RPC"
-    },
-    {
      "protocol": "https",
      "url": "seed1.spotcoin.com",
      "location": "Frankfurt",
