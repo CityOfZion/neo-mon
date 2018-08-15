@@ -456,15 +456,6 @@
      "port": "10332",
      "type": "RPC"
    },
-   {
-    "protocol": "http",
-    "url": "seed02.cryptomunki.tech",
-    "location": "Australia",
-    "address": "52.65.28.120",
-    "locale": "au",
-    "port": "10332",
-    "type": "RPC"
-    },
     {
      "protocol": "http",
      "url": "pyrpc1.neeeo.org",
