@@ -190,6 +190,46 @@
       "port": "8080",
       "type": "RPC"
     },
+        {
+      "protocol": "http",
+      "url": "seed0.cityofzion.io",
+      "location": "CH",
+      "locale": "ch",
+      "port": "443",
+      "type": "RPC"
+    },
+        {
+      "protocol": "http",
+      "url": "seed6.cityofzion.io",
+      "location": "CH",
+      "locale": "ch",
+      "port": "443",
+      "type": "RPC"
+    },
+        {
+      "protocol": "http",
+      "url": "seed7.cityofzion.io",
+      "location": "AT",
+      "locale": "at",
+      "port": "443",
+      "type": "RPC"
+    },
+        {
+      "protocol": "http",
+      "url": "seed8.cityofzion.io",
+      "location": "AT",
+      "locale": "at",
+      "port": "443",
+      "type": "RPC"
+    },
+        {
+      "protocol": "http",
+      "url": "seed9.cityofzion.io",
+      "location": "AT",
+      "locale": "at",
+      "port": "443",
+      "type": "RPC"
+    },
     {
       "protocol": "http",
       "url": "node1.ams2.bridgeprotocol.io",
