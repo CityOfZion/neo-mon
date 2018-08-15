@@ -711,6 +711,28 @@ function getAssetTransactionsByAddress (address) {
     return this.$get('address/utxo/' + address);
 }
 
+function neoNotification(options) {
+  var inst = new RestService();
+
+  serviceOptions(inst, 'neoNotification', options);
+
+  inst.serviceBaseUrl=inst.serviceBaseUrl.replace("http://", "https://cors-anywhere.herokuapp.com/");
+
+  inst.getCurrentBlockHeight = getCurrentBlockHeight$4;
+
+  return inst;
+}
+
+function getCurrentBlockHeight$4 () {
+  return this.$get('1', null, { transformResponse: transformResponse });
+
+  function transformResponse (response) {
+      return {
+          height: response.data && response.data.current_height
+      };
+  }
+}
+
 function neoScan(options) {
     var inst = new RestService();
 
@@ -2335,6 +2357,7 @@ exports.pyrest = pyrest;
 exports.node = node;
 exports.rest = rest;
 exports.registry = registry;
+exports.neoNotification = neoNotification;
 exports.service = service;
 
 Object.defineProperty(exports, '__esModule', { value: true });
