@@ -279,27 +279,11 @@
       "type": "RPC"
     },
     {
-      "protocol": "http",
-      "url": "seed1.redpulse.com",
-      "location": "Frankfurt",
-      "locale": "de",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed2.redpulse.com",
-      "location": "Singapore",
-      "locale": "sg",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
       "protocol": "https",
       "url": "seed1.redpulse.com",
       "location": "Frankfurt",
       "locale": "de",
-      "port": "10331",
+      "port": "443",
       "type": "RPC"
     },
     {
@@ -307,7 +291,7 @@
       "url": "seed2.redpulse.com",
       "location": "Singapore",
       "locale": "sg",
-      "port": "10331",
+      "port": "443",
       "type": "RPC"
     },
     {
