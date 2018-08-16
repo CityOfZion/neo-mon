@@ -473,6 +473,87 @@
       "port": "10332",
       "type": "RPC"
     },
+
+    {
+      "protocol": "http",
+      "url": "seed1.ngd.network",
+      "location": "USA",
+      "locale": "us",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed2.ngd.network",
+      "location": "USA",
+      "locale": "us",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed3.ngd.network",
+      "location": "Hong Kong",
+      "locale": "hk",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed4.ngd.network",
+      "location": "Hong Kong",
+      "locale": "hk",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed5.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed6.ngd.network",
+      "location": "USA",
+      "locale": "us",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed7.ngd.network",
+      "location": "USA",
+      "locale": "us",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed8.ngd.network",
+      "location": "USA",
+      "locale": "us",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed9.ngd.network",
+      "location": "Hong Kong",
+      "locale": "hk",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed10.ngd.network",
+      "location": "Hong Kong",
+      "locale": "hk",
+      "port": "10332",
+      "type": "RPC"
+    },
     {
       "service": "neoNotification",
       "url": "http://notifications1.neeeo.org/v1/notifications/block/",
