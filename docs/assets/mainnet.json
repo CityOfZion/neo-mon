@@ -151,46 +151,46 @@
       "type": "RPC"
     },
     {
-      "protocol": "http",
+      "protocol": "https",
       "url": "seed1.cityofzion.io",
       "location": "USA",
       "locale": "us",
-      "port": "8080",
+      "port": "443",
       "type": "RPC"
     },
     {
-      "protocol": "http",
+      "protocol": "https",
       "url": "seed2.cityofzion.io",
       "location": "USA",
       "locale": "us",
-      "port": "8080",
+      "port": "443",
       "type": "RPC"
     },
     {
-      "protocol": "http",
+      "protocol": "https",
       "url": "seed3.cityofzion.io",
       "location": "USA",
       "locale": "us",
-      "port": "8080",
+      "port": "443",
       "type": "RPC"
     },
     {
-      "protocol": "http",
+      "protocol": "https",
       "url": "seed4.cityofzion.io",
       "location": "USA",
       "locale": "us",
-      "port": "8080",
+      "port": "443",
       "type": "RPC"
     },
     {
-      "protocol": "http",
+      "protocol": "https",
       "url": "seed5.cityofzion.io",
       "location": "USA",
       "locale": "us",
-      "port": "8080",
+      "port": "443",
       "type": "RPC"
     },
-        {
+    {
       "protocol": "https",
       "url": "seed0.cityofzion.io",
       "location": "CH",
