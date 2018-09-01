@@ -86,22 +86,6 @@
       "type": "RPC"
     },
     {
-      "service": "pyrest",
-      "type": "REST",
-      "url": "https://pyrest1.redpulse.com/v1/",
-      "address": "35.158.246.146",
-      "location": "Frankfurt",
-      "locale": "de"
-    },
-    {
-      "service": "pyrest",
-      "type": "REST",
-      "url": "https://pyrest2.redpulse.com/v1/",
-      "address": "52.76.36.115",
-      "location": "Singapore",
-      "locale": "sg"
-    },
-    {
       "protocol": "https",
       "url": "seed1.neo.org",
       "location": "China",
@@ -295,38 +279,6 @@
       "type": "RPC"
     },
     {
-      "protocol": "https",
-      "url": "pyrpc1.redpulse.com",
-      "location": "Frankfurt",
-      "locale": "de",
-      "port": "10331",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
-      "url": "pyrpc2.redpulse.com",
-      "location": "Singapore",
-      "locale": "sg",
-      "port": "10331",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "pyrpc1.redpulse.com",
-      "location": "Frankfurt",
-      "locale": "de",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "pyrpc2.redpulse.com",
-      "location": "Singapore",
-      "locale": "sg",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
       "protocol":"https",
       "url":"seed.o3node.org",
       "location":"Tokyo",
@@ -334,66 +286,6 @@
       "locale":"jp",
       "port":"10331",
       "type":"RPC"
-   },
-   {
-      "protocol":"https",
-      "url":"pyrpc1.narrative.org",
-      "location":"Texas",
-      "locale":"us",
-      "port":"443",
-      "type":"RPC"
-   },
-   {
-      "service": "pyrest",
-      "url":"https://pyrest1.narrative.org/v1/",
-      "location":"Texas",
-      "locale":"us",
-      "type":"REST"
-   },
-   {
-      "protocol":"https",
-      "url":"pyrpc2.narrative.org",
-      "location":"New York",
-      "locale":"us",
-      "port":"443",
-      "type":"RPC"
-   },
-   {
-      "service": "pyrest",
-      "url":"https://pyrest2.narrative.org/v1/",
-      "location":"New York",
-      "locale":"us",
-      "type":"REST"
-   },
-   {
-      "protocol":"https",
-      "url":"pyrpc3.narrative.org",
-      "location":"London",
-      "locale":"gb",
-      "port":"443",
-      "type":"RPC"
-   },
-   {
-      "service": "pyrest",
-      "url":"https://pyrest3.narrative.org/v1/",
-      "location":"London",
-      "locale":"gb",
-      "type":"REST"
-   },
-   {
-      "protocol":"https",
-      "url":"pyrpc4.narrative.org",
-      "location":"Amsterdam",
-      "locale":"nl",
-      "port":"443",
-      "type":"RPC"
-   },
-   {
-      "service": "pyrest",
-      "url":"https://pyrest4.narrative.org/v1/",
-      "location":"Amsterdam",
-      "locale":"nl",
-      "type":"REST"
    },
    {
      "protocol": "http",
@@ -428,15 +320,6 @@
      "location": "Sao Paulo",
      "address": "54.233.224.215",
      "locale": "br",
-     "port": "10332",
-     "type": "RPC"
-   },
-   {
-     "protocol": "http",
-     "url": "pyrpc1.nodeneo.ch",
-     "location": "Switzerland",
-     "address": "178.195.151.229",
-     "locale": "ch",
      "port": "10332",
      "type": "RPC"
    },
