@@ -396,6 +396,14 @@
       "type": "RPC"
     },
     {
+      "protocol": "https",
+      "url": "seed1.red4sec.com",
+      "location": "France",
+      "locale": "fr",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
       "service": "neoNotification",
       "url": "http://notifications1.neeeo.org/v1/notifications/block/",
       "location": "United States",
