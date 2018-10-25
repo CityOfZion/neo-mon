@@ -252,15 +252,6 @@
       "port": "443",
       "type": "RPC"
     },
-    {
-      "protocol":"https",
-      "url":"seed.o3node.org",
-      "location":"Tokyo",
-      "address":"13.230.26.79",
-      "locale":"jp",
-      "port":"10331",
-      "type":"RPC"
-   },
    {
      "protocol": "http",
      "url": "seed1.aphelion-neo.com",
