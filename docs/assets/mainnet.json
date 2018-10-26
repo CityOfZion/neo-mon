@@ -404,6 +404,14 @@
       "type": "RPC"
     },
     {
+      "protocol": "http",
+      "url": "seed.neoeconomy.io",
+      "location": "Canada",
+      "locale": "ca",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
       "service": "neoNotification",
       "url": "http://notifications1.neeeo.org/v1/notifications/block/",
       "location": "United States",
