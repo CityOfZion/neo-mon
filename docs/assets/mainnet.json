@@ -411,6 +411,15 @@
       "type": "RPC"
     },
     {
+      "protocol": "http",
+      "url": "seed1.cryptoholics.cc",
+      "address": "91.121.221.54",
+      "location": "France",
+      "locale": "fr",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
       "service": "neoNotification",
       "url": "http://notifications1.neeeo.org/v1/notifications/block/",
       "location": "United States",
