@@ -466,6 +466,14 @@
       "address": "185.150.10.88",
       "locale": "at",
       "type": "REST"
+    },
+    {
+      "protocol": "http",
+      "url": "neo-node.com",
+      "location": "Canada",
+      "port": "10332",
+      "locale": "ca",
+      "type": "RPC"
     }
   ]
 }
