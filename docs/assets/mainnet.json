@@ -474,6 +474,15 @@
       "port": "10332",
       "locale": "ca",
       "type": "RPC"
-    }
+    },
+    {
+     "protocol": "http",
+     "url": "neo-mn4.westeurope.cloudapp.azure.com",
+     "location": "West Europe",
+     "address": "137.117.155.93",
+     "locale": "ch",
+     "port": "10332",
+     "type": "RPC"
+ }
   ]
 }
