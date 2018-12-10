@@ -18,6 +18,94 @@
     },
     {
       "protocol": "https",
+      "url": "http://seed1.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "http://seed1.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "http://seed2.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "http://seed3.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "http://seed4.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "http://seed5.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "http://seed6.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "http://seed7.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "http://seed8.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "http://seed9.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "http://seed10.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20331",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
       "url": "seed1.neo.org",
       "location": "China",
       "address": "47.94.164.49",
