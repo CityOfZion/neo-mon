@@ -18,7 +18,7 @@
     },
     {
       "protocol": "https",
-      "url": "http://seed1.ngd.network",
+      "url": "seed1.ngd.network",
       "location": "China",
       "locale": "cn",
       "port": "20331",
@@ -26,7 +26,7 @@
     },
     {
       "protocol": "https",
-      "url": "http://seed1.ngd.network",
+      "url": "seed2.ngd.network",
       "location": "China",
       "locale": "cn",
       "port": "20331",
@@ -34,7 +34,7 @@
     },
     {
       "protocol": "https",
-      "url": "http://seed2.ngd.network",
+      "url": "seed3.ngd.network",
       "location": "China",
       "locale": "cn",
       "port": "20331",
@@ -42,7 +42,7 @@
     },
     {
       "protocol": "https",
-      "url": "http://seed3.ngd.network",
+      "url": "seed4.ngd.network",
       "location": "China",
       "locale": "cn",
       "port": "20331",
@@ -50,7 +50,7 @@
     },
     {
       "protocol": "https",
-      "url": "http://seed4.ngd.network",
+      "url": "seed5.ngd.network",
       "location": "China",
       "locale": "cn",
       "port": "20331",
@@ -58,7 +58,7 @@
     },
     {
       "protocol": "https",
-      "url": "http://seed5.ngd.network",
+      "url": "seed6.ngd.network",
       "location": "China",
       "locale": "cn",
       "port": "20331",
@@ -66,7 +66,7 @@
     },
     {
       "protocol": "https",
-      "url": "http://seed6.ngd.network",
+      "url": "seed7.ngd.network",
       "location": "China",
       "locale": "cn",
       "port": "20331",
@@ -74,7 +74,7 @@
     },
     {
       "protocol": "https",
-      "url": "http://seed7.ngd.network",
+      "url": "seed8.ngd.network",
       "location": "China",
       "locale": "cn",
       "port": "20331",
@@ -82,7 +82,7 @@
     },
     {
       "protocol": "https",
-      "url": "http://seed8.ngd.network",
+      "url": "seed9.ngd.network",
       "location": "China",
       "locale": "cn",
       "port": "20331",
@@ -90,15 +90,7 @@
     },
     {
       "protocol": "https",
-      "url": "http://seed9.ngd.network",
-      "location": "China",
-      "locale": "cn",
-      "port": "20331",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
-      "url": "http://seed10.ngd.network",
+      "url": "seed10.ngd.network",
       "location": "China",
       "locale": "cn",
       "port": "20331",
