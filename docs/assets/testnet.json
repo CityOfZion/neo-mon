@@ -21,7 +21,7 @@
       "url": "seed1.ngd.network",
       "location": "China",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -29,7 +29,7 @@
       "url": "seed2.ngd.network",
       "location": "China",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -37,7 +37,7 @@
       "url": "seed3.ngd.network",
       "location": "China",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -45,7 +45,7 @@
       "url": "seed4.ngd.network",
       "location": "China",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -53,7 +53,7 @@
       "url": "seed5.ngd.network",
       "location": "China",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -61,7 +61,7 @@
       "url": "seed6.ngd.network",
       "location": "China",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -69,7 +69,7 @@
       "url": "seed7.ngd.network",
       "location": "China",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -77,7 +77,7 @@
       "url": "seed8.ngd.network",
       "location": "China",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -85,7 +85,7 @@
       "url": "seed9.ngd.network",
       "location": "China",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -93,7 +93,7 @@
       "url": "seed10.ngd.network",
       "location": "China",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -102,7 +102,7 @@
       "location": "China",
       "address": "47.94.164.49",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -111,6 +111,7 @@
       "location": "China",
       "address": "139.219.106.33",
       "locale": "cn",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -119,6 +120,7 @@
       "location": "Canada",
       "address": "47.89.178.72",
       "locale": "ca",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -127,6 +129,7 @@
       "location": "Canada",
       "address": "47.88.53.224",
       "locale": "ca",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -135,6 +138,7 @@
       "location": "Canada",
       "address": "47.91.92.192",
       "locale": "ca",
+      "port": "20332",
       "type": "RPC"
     },
     {
