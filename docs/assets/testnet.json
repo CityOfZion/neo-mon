@@ -143,9 +143,9 @@
     },
     {
       "protocol": "http",
-      "url": "api.otcgo.cn",
+      "url": "future.otcgo.cn",
       "location": "China",
-      "address": "121.42.26.131",
+      "address": "120.27.19.223",
       "locale": "cn",
       "type": "RPC"
     },
