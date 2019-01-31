@@ -21,7 +21,7 @@
       "url": "seed1.ngd.network",
       "location": "China",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
@@ -102,7 +102,7 @@
       "location": "China",
       "address": "47.94.164.49",
       "locale": "cn",
-      "port": "20331",
+      "port": "20332",
       "type": "RPC"
     },
     {
