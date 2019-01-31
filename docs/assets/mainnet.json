@@ -102,9 +102,9 @@
     },
     {
       "protocol": "http",
-      "url": "api.otcgo.cn",
+      "url": "nep5.otcgo.cn",
       "location": "China",
-      "address": "121.42.26.131",
+      "address": "114.215.30.71",
       "locale": "cn",
       "type": "RPC"
     },
