@@ -51,15 +51,6 @@
       "type": "RPC"
     },
     {
-      "protocol": "http",
-      "url": "seed1.travala.com",
-      "location": "Singapore",
-      "address": "52.74.91.157",
-      "locale": "sg",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
       "protocol": "https",
       "url": "seed1.neo.org",
       "location": "China",
