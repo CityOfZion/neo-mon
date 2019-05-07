@@ -447,6 +447,30 @@
       "port": "10332",
       "locale": "ca",
       "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "rpc4.ilink.network",
+      "location": "HK",
+      "locale": "hk",
+      "port": "8443",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "rpc3.ilink.network",
+      "location": "SGP",
+      "locale": "sgp",
+      "port": "8443",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "rpc.ilink.network",
+      "location": "HK",
+      "locale": "hk",
+      "port": "443",
+      "type": "RPC"
     }
   ]
 }
