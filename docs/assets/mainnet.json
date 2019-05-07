@@ -450,6 +450,22 @@
     },
     {
       "protocol": "https",
+      "url": "rpc6.ilink.network",
+      "location": "SG",
+      "locale": "sg",
+      "port": "8443",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "rpc5.ilink.network",
+      "location": "SG",
+      "locale": "sg",
+      "port": "8443",
+      "type": "RPC"
+    },
+        {
+      "protocol": "https",
       "url": "rpc4.ilink.network",
       "location": "HK",
       "locale": "hk",
@@ -459,16 +475,16 @@
     {
       "protocol": "https",
       "url": "rpc3.ilink.network",
-      "location": "SGP",
-      "locale": "sgp",
+      "location": "CN",
+      "locale": "cn",
       "port": "8443",
       "type": "RPC"
     },
     {
       "protocol": "https",
       "url": "rpc.ilink.network",
-      "location": "HK",
-      "locale": "hk",
+      "location": "CN",
+      "locale": "cn",
       "port": "443",
       "type": "RPC"
     }
