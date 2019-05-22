@@ -487,6 +487,15 @@
       "locale": "cn",
       "port": "443",
       "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "explorer.o3node.org",
+      "location": "US",
+      "locale": "us",
+      "port": "443",
+      "type": "RPC"
     }
+
   ]
 }
