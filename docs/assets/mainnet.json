@@ -425,22 +425,6 @@
       "type": "REST"
     },
     {
-      "service": "neoNotification",
-      "url": "https://n1.cityofzion.io/v1/notifications/block/",
-      "location": "Switzerland",
-      "address": "89.145.165.85",
-      "locale": "ch",
-      "type": "REST"
-    },
-    {
-      "service": "neoNotification",
-      "url": "https://n2.cityofzion.io/v1/notifications/block/",
-      "location": "Austria",
-      "address": "185.150.10.88",
-      "locale": "at",
-      "type": "REST"
-    },
-    {
       "protocol": "http",
       "url": "neo-node.com",
       "location": "Canada",
