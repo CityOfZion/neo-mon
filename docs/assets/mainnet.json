@@ -384,55 +384,6 @@
       "type": "RPC"
     },
     {
-      "protocol": "http",
-      "url": "seed1.cryptoholics.cc",
-      "address": "91.121.221.54",
-      "location": "France",
-      "locale": "fr",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
-      "service": "neoNotification",
-      "url": "http://notifications1.neeeo.org/v1/notifications/block/",
-      "location": "United States",
-      "address": "18.191.192.189",
-      "locale": "us",
-      "type": "REST"
-    },
-    {
-      "service": "neoNotification",
-      "url": "http://notifications2.neeeo.org/v1/notifications/block/",
-      "location": "United States",
-      "address": "18.191.192.189",
-      "locale": "us",
-      "type": "REST"
-    },
-    {
-      "service": "neoNotification",
-      "url": "http://notifications3.neeeo.org/v1/notifications/block/",
-      "location": "United States",
-      "address": "18.191.192.189",
-      "locale": "us",
-      "type": "REST"
-    },
-    {
-      "service": "neoNotification",
-      "url": "http://notifications4.neeeo.org/v1/notifications/block/",
-      "location": "United States",
-      "address": "18.191.192.189",
-      "locale": "us",
-      "type": "REST"
-    },
-    {
-      "protocol": "http",
-      "url": "neo-node.com",
-      "location": "Canada",
-      "port": "10332",
-      "locale": "ca",
-      "type": "RPC"
-    },
-    {
       "protocol": "https",
       "url": "rpc6.ilink.network",
       "location": "SG",
