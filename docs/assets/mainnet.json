@@ -92,14 +92,6 @@
       "type": "RPC"
     },
     {
-      "protocol": "http",
-      "url": "nep5.otcgo.cn",
-      "location": "China",
-      "address": "114.215.30.71",
-      "locale": "cn",
-      "type": "RPC"
-    },
-    {
       "protocol": "https",
       "url": "seed1.cityofzion.io",
       "location": "USA",
