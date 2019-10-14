@@ -52,47 +52,6 @@
     },
     {
       "protocol": "https",
-      "url": "seed1.neo.org",
-      "location": "China",
-      "address": "47.94.164.49",
-      "locale": "cn",
-      "port": "10331",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed2.neo.org",
-      "location": "China",
-      "address": "139.219.106.33",
-      "locale": "cn",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed3.neo.org",
-      "location": "Canada",
-      "address": "47.89.178.72",
-      "locale": "ca",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed4.neo.org",
-      "location": "Canada",
-      "address": "47.88.53.224",
-      "locale": "ca",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "seed5.neo.org",
-      "location": "Canada",
-      "address": "47.91.92.192",
-      "locale": "ca",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
       "url": "seed1.cityofzion.io",
       "location": "USA",
       "locale": "us",
