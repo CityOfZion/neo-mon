@@ -131,54 +131,6 @@
       "type": "RPC"
     },
     {
-      "protocol": "http",
-      "url": "node1.ams2.bridgeprotocol.io",
-      "location": "Netherlands",
-      "address": "198.211.127.188",
-      "locale": "nl",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "node2.ams2.bridgeprotocol.io",
-      "location": "Netherlands",
-      "address": "37.139.22.119",
-      "locale": "nl",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "node1.nyc3.bridgeprotocol.io",
-      "location": "USA",
-      "address": "165.227.186.72",
-      "locale": "us",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "node2.nyc3.bridgeprotocol.io",
-      "location": "USA",
-      "address": "159.65.244.191",
-      "locale": "us",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "node1.sgp1.bridgeprotocol.io",
-      "location": "Singapore",
-      "address": "206.189.94.221",
-      "locale": "sg",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "node2.sgp1.bridgeprotocol.io",
-      "location": "Singapore",
-      "address": "206.189.152.158",
-      "locale": "sg",
-      "type": "RPC"
-    },
-    {
       "protocol": "https",
       "url": "seed1.redpulse.com",
       "location": "Frankfurt",
