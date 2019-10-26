@@ -333,6 +333,14 @@
       "locale": "us",
       "port": "443",
       "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "134.209.108.64",
+      "location": "Singapur",
+      "locale": "sgp",
+      "port": "20332",
+      "type": "RPC"
     }
 
   ]
