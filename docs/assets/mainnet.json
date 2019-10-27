@@ -263,10 +263,10 @@
       "type": "RPC"
     },
     {
-      "protocol": "https",
+      "protocol": "http",
       "url": "seed1.red4sec.com",
       "location": "France",
-      "locale": "fr",
+      "locale": "de",
       "port": "10332",
       "type": "RPC"
     },
@@ -342,6 +342,5 @@
       "port": "20332",
       "type": "RPC"
     }
-
   ]
 }
