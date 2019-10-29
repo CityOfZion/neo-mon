@@ -336,9 +336,33 @@
     },
     {
       "protocol": "http",
-      "url": "134.209.108.64",
-      "location": "Singapur",
-      "locale": "sgp",
+      "url": "rpc1.go.nspcc.ru",
+      "location": "Singapor",
+      "locale": "sp",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "rpc2.go.nspcc.ru",
+      "location": "England",
+      "locale": "uk",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "rpc3.go.nspcc.ru",
+      "location": "Canada",
+      "locale": "ca",
+      "port": "10332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "rpc4.go.nspcc.ru",
+      "location": "US",
+      "locale": "us",
       "port": "10332",
       "type": "RPC"
     }
