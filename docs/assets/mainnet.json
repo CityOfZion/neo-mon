@@ -357,12 +357,18 @@
       "locale": "ca",
       "port": "10332",
       "type": "RPC"
-    },
-    {
+    },{
       "protocol": "http",
       "url": "rpc4.go.nspcc.ru",
       "location": "US",
       "locale": "us",
+      "port": "10332",
+      "type": "RPC"
+    },{
+      "protocol": "http",
+      "url": "pyrpc2.redpulse.com",
+      "location": "SG",
+      "locale": "sg",
       "port": "10332",
       "type": "RPC"
     }
