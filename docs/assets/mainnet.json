@@ -345,8 +345,8 @@
     {
       "protocol": "http",
       "url": "rpc2.go.nspcc.ru",
-      "location": "England",
-      "locale": "uk",
+      "location": "London",
+      "locale": "gb",
       "port": "10332",
       "type": "RPC"
     },
@@ -367,8 +367,8 @@
     },{
       "protocol": "http",
       "url": "pyrpc2.redpulse.com",
-      "location": "SG",
-      "locale": "sg",
+      "location": "SGP",
+      "locale": "sp",
       "port": "10332",
       "type": "RPC"
     }
