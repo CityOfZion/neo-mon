@@ -309,8 +309,8 @@
     {
       "protocol": "http",
       "url": "rpc2.go.nspcc.ru",
-      "location": "London",
-      "locale": "gb",
+      "location": "Russia",
+      "locale": "ru",
       "port": "10332",
       "type": "RPC"
     },
