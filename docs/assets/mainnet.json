@@ -301,16 +301,16 @@
     {
       "protocol": "http",
       "url": "rpc1.go.nspcc.ru",
-      "location": "Singapor",
-      "locale": "sg",
+      "location": "Russia",
+      "locale": "ru",
       "port": "10332",
       "type": "RPC"
     },
     {
       "protocol": "http",
       "url": "rpc2.go.nspcc.ru",
-      "location": "London",
-      "locale": "gb",
+      "location": "Russia",
+      "locale": "ru",
       "port": "10332",
       "type": "RPC"
     },
