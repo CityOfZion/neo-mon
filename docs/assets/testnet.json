@@ -17,6 +17,21 @@
       "type": "REST"
     },
     {
+      "service": "PubSub",
+      "url": "wss://pubsub.test.neologin.io/",
+      "location": "Ireland",
+      "locale": "ie",
+      "type": "WebSockets"
+    },
+    {
+      "protocol": "https",
+      "url": "test.neologin.io",
+      "location": "Ireland",
+      "port": "443",
+      "locale": "ie",
+      "type": "RPC"
+    },
+    {
       "protocol": "http",
       "url": "seed1.ngd.network",
       "location": "China",
