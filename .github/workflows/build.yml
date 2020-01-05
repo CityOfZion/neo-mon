@@ -28,4 +28,4 @@ jobs:
       env: 
         PUBLISH_DIR: ./docs
         PUBLISH_BRANCH: gh-pages
-        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
