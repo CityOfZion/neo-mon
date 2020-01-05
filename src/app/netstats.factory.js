@@ -215,7 +215,6 @@
                     });
                 }
 				else if (endPoint.type === 'WEBSOCKETS') {
-					debugger;
 					try{
 						var startTime = new Date();
 						var ws = new WebSocket(endPoint.url);
