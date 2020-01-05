@@ -20,7 +20,7 @@
         .filter('statusClass', function () {
             return function (endPoint, best) {
                 if (endPoint.isItUp) {
-                    if (best - endPoint.lastBlock < 3) {
+                    if (best - endPoint.lastBlock < 3 || endPoint.type === "WEBSOCKETS") {
                         return 'color-success';
                     }
                     else if (best - endPoint.lastBlock <= 1000) {
