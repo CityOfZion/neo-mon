@@ -22,7 +22,6 @@ jobs:
       run: |
         gulp publish
     - name: Deploy to GitHub Pages
-      continue-on-error: true
       uses: peaceiris/actions-gh-pages@v2.5.0
       if: success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
       env: 
