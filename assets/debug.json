@@ -1,0 +1,14 @@
+{
+  "name": "MainNet",
+  "pollTime": "5000",
+  "sites": [
+    {
+      "service": "antChain",
+      "url": "http://www.antchain.org/api/v1/",
+      "location": "United States",
+      "address": "47.88.34.247",
+      "locale": "us",
+      "type": "REST"
+    }
+  ]
+}

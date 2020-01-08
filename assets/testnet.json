@@ -1,0 +1,163 @@
+{
+  "name": "TestNet",
+  "pollTime": "10000",
+  "sites": [
+    {
+      "service": "neoScan",
+      "url": "https://neoscan-testnet.io/api/test_net/v1/",
+      "location": "United States",
+      "locale": "us",
+      "type": "REST"
+    },
+    {
+      "service": "neon",
+      "url": "http://testnet-api.neonwallet.com/v2/",
+      "location": "United States",
+      "locale": "us",
+      "type": "REST"
+    },
+    {
+      "service": "PubSub",
+      "url": "wss://pubsub.test.neologin.io/",
+      "location": "Ireland",
+      "locale": "ie",
+      "type": "WebSockets"
+    },
+    {
+      "protocol": "https",
+      "url": "test.neologin.io",
+      "location": "Ireland",
+      "port": "443",
+      "locale": "ie",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed1.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed2.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed3.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed4.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed5.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed6.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed7.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed8.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed9.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "seed10.ngd.network",
+      "location": "China",
+      "locale": "cn",
+      "port": "20332",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "future.otcgo.cn",
+      "location": "China",
+      "address": "120.27.19.223",
+      "locale": "cn",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "test1.cityofzion.io",
+      "location": "USA",
+      "locale": "us",
+      "port": "443",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "test2.cityofzion.io",
+      "location": "USA",
+      "locale": "us",
+      "port": "443",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "test3.cityofzion.io",
+      "location": "USA",
+      "locale": "us",
+      "port": "443",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "test4.cityofzion.io",
+      "location": "USA",
+      "locale": "us",
+      "port": "443",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "test5.cityofzion.io",
+      "location": "USA",
+      "locale": "us",
+      "port": "443",
+      "type": "RPC"
+    }
+  ]
+}
