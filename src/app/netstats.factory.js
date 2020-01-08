@@ -189,7 +189,7 @@
                         updateLastConnectedTime(endPoint);
                     });
                 }
-                else { //REST
+                else if (endPoint.type === 'REST'){ //REST
                     endPoint.httpService.poll(netStats.pollingPolicy).getCurrentBlockHeight().notify(function (result) {
                         
                         endPoint.lastBlock = result.height;
@@ -214,6 +214,39 @@
                         updateLastConnectedTime(endPoint);
                     });
                 }
+				else if (endPoint.type === 'WEBSOCKETS') {
+					try{
+						var startTime = new Date();
+						var ws = new WebSocket(endPoint.url);
+						ws.onopen = function(event) {
+							endPoint.latency = new Date() - startTime;
+							endPoint.hasConnectedBefore = true;
+							if (!endPoint.isItUp) {
+								endPoint.isItUp = true;
+								sortEndPoints(netStats);
+							}
+							ws.close();
+						};
+						ws.onerror = function(event) {
+							if (endPoint.isItUp) {
+								endPoint.isItUp = false;
+								sortEndPoints(netStats);
+							}
+
+							updateLastConnectedTime(endPoint);
+						}
+					} catch (e){
+						if (endPoint.isItUp) {
+							endPoint.isItUp = false;
+							sortEndPoints(netStats);
+						}
+
+						updateLastConnectedTime(endPoint);
+					}
+				}
+				else {
+					console.log(endPoint.type)
+				}
             });
         }
 
@@ -312,6 +345,9 @@
                         throw new Error('Unknown REST Service: ' + site.service);
                     }
                 }
+				else if (type === 'WEBSOCKETS') {
+                    url = site.url;
+				}
                 else {
                     throw new Error('Unknown endpoint type: ' + site.type);
                 }

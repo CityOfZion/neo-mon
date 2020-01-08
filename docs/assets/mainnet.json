@@ -11,6 +11,21 @@
       "type": "REST"
     },
     {
+      "service": "PubSub",
+      "url": "wss://pubsub.main.neologin.io/",
+      "location": "Ireland",
+      "locale": "ie",
+      "type": "WebSockets"
+    },
+    {
+      "protocol": "https",
+      "url": "main.neologin.io",
+      "location": "Ireland",
+      "port": "443",
+      "locale": "ie",
+      "type": "RPC"
+    },
+    {
       "protocol": "https",
       "url": "seed1.switcheo.network",
       "location": "Singapore",
