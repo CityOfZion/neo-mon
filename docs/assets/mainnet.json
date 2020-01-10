@@ -281,7 +281,7 @@
       "port": "8443",
       "type": "RPC"
     },
-        {
+    {
       "protocol": "https",
       "url": "rpc4.ilink.network",
       "location": "HK",
@@ -320,7 +320,8 @@
       "locale": "ru",
       "port": "10332",
       "type": "RPC"
-    },    {	    {
+    },
+    {
       "protocol": "http",	
       "url": "rpc2.go.nspcc.ru",	
       "location": "Russia",	
