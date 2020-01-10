@@ -320,6 +320,29 @@
       "locale": "ru",
       "port": "10332",
       "type": "RPC"
+    },    {	    {
+      "protocol": "http",	
+      "url": "rpc2.go.nspcc.ru",	
+      "location": "Russia",	
+      "locale": "ru",	
+      "port": "10332",	
+      "type": "RPC"	
+    },	
+    {	
+      "protocol": "http",	
+      "url": "rpc3.go.nspcc.ru",	
+      "location": "Canada",	
+      "locale": "ca",	
+      "port": "10332",	
+      "type": "RPC"	
+    },
+    {	
+      "protocol": "http",	
+      "url": "rpc4.go.nspcc.ru",	
+      "location": "US",	
+      "locale": "us",	
+      "port": "10332",	
+      "type": "RPC"	
     },
     {
       "protocol": "http",
