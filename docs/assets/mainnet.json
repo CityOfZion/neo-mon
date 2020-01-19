@@ -3,6 +3,38 @@
   "pollTime": "5000",
   "sites": [
     {
+      "protocol": "https",
+      "url": "node1.nl.neoblocks.org",
+      "location": "The Netherlands",
+      "port": "443",
+      "locale": "nl",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "node1.nl.neoblocks.org",
+      "location": "The Netherlands",
+      "port": "10332",
+      "locale": "nl",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "node2.nl.neoblocks.org",
+      "location": "The Netherlands",
+      "port": "443",
+      "locale": "nl",
+      "type": "RPC"
+    },
+    {
+      "protocol": "http",
+      "url": "node2.nl.neoblocks.org",
+      "location": "The Netherlands",
+      "port": "10332",
+      "locale": "nl",
+      "type": "RPC"
+    },
+    {
       "service": "neoScan",
       "url": "https://neoscan.io/api/main_net/v1/",
       "location": "United States",
