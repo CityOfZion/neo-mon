@@ -85,7 +85,7 @@
             </thead>
             <tbody class="stats-table-body">
                 <tr ng-repeat="endPoint in vm.netStats.endPoints" class="{{ endPoint | statusClass : vm.netStats.bestBlock }}" >
-                    <td class="stats-table__cell" title="{{ endPoint.location }}"><neo-icon class="icon-button__tsvg" name="{{ 'flag-' + endPoint.locale }}"></neo-icon></td>
+                    <td class="stats-table__cell" title="{{ endPoint.location }}"><img class="icon-button__tsvg" src="{{ 'icons/flag-' + endPoint.locale + '.svg' }}"></img></td>
                     <td class="stats-table__cell">{{ endPoint.name }}</td>
                     <td class="stats-table__cell">{{ endPoint.type }}</td>
                     <td class="stats-table__cell">{{ endPoint.latency }}</td>
