@@ -1,33 +1,22 @@
 # NeoMon - Neo Network Status Monitor
-
-## Overview:
-
-NeoMon is a tool for monitoring the status of popular RPC Nodes and REST endpoints on the Neo network.
+> NeoMon is a tool for monitoring the status of popular RPC Nodes and REST endpoints on the Neo network.
 
 ## Install, Build and Run
-
 ```cmd
 npm install
-```
-
-```cmd
-bower install
-```
-
-```cmd
-gulp serve
+bash build.sh
 ```
 
 ## Manage Endpoints
 
-Endpoints can be configured by editing the following JSON files directly in the Github Pages web folder. Commits to this folder update the monitor.cityofzion.io web site immediately.
+Endpoints can be configured by editing the following JSON files directly. Commits to this repository update the monitor.cityofzion.io web site immediately.
 
 ```
-docs/assets/mainnet.json
+mainnet.json
 ```
 
 ```
-docs/assets/testnet.json
+testnet.json
 ```
 
 
@@ -37,24 +26,15 @@ Each endpoint in the json has a locale property. Get the corresponding SVG from
 
 https://github.com/lipis/flag-icon-css/tree/master/flags/1x1
 
-copy the raw source to a new file and add to /src/assets/icons/tsvg . Make sure to follow the same file naming convention.
+Copy the raw source to a new file and add it to /src/assets/icons. Make sure to follow the same file naming convention.
 
-Remove `id` property from SVG and add ` viewBox="0 0 512 512"`. See one of the other SVGs for an example.
-
-Run the Deploy step below to build and to update GitHub pages /docs folder.
+Remove `id` property from the SVG and add ` viewBox="0 0 512 512"`. See one of the other SVGs for an example.
 
 ## Deploy
 
-Neomon is hosted on GitHub pages by publishing to /docs folder. GitHub Settings are configured to use the custom domain: monitor.cityofzion.io
+Neomon is hosted on GitHub pages by publishing to the `gh-pages` branch. GitHub Settings are configured to use the custom domain: monitor.cityofzion.io
 
-To publish changes
-```cmd
-gulp publish
-```
-
-This command will update the /docs folder with a deployable version of the application. When the changes are merged into master branch they will immediately show up on http://monitor.cityofzion.io
-
-
+New updates to the published website are done by CI (GitHub actions).
 
 ## Common questions
 

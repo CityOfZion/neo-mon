@@ -40,7 +40,7 @@
             }
             else {
 
-                $http({method: 'GET', url: 'assets/' + id + '.json'}).then(function (result) {
+                $http({method: 'GET', url: id + '.json'}).then(function (result) {
 
                     cacheNetworkStats[id] = NetStatsFactory.createFromJson(result.data);
 
