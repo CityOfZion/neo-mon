@@ -115,7 +115,24 @@
 
         function sortEndPoints (netStats) {
 
+            function getPriority(type){
+                switch(type) {
+                    case "REST":
+                        return 4;
+                    case "WEBSOCKETS":
+                        return 3;
+                    case "RPC":
+                        return 0;
+                    default:
+                        return 1;
+                }
+            }
+
             netStats.endPoints.sort(function (a, b) {
+
+                if(getPriority(a.type) !== getPriority(b.type)){
+                    return getPriority(b.type) - getPriority(a.type);
+                }
 
                 var c = a.peerCount;
                 var d = b.peerCount;
