@@ -2618,7 +2618,24 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
         function sortEndPoints (netStats) {
 
+            function getPriority(type){
+                switch(type) {
+                    case "REST":
+                        return 4;
+                    case "WEBSOCKETS":
+                        return 3;
+                    case "RPC":
+                        return 0;
+                    default:
+                        return 1;
+                }
+            }
+
             netStats.endPoints.sort(function (a, b) {
+
+                if(getPriority(a.type) !== getPriority(b.type)){
+                    return getPriority(b.type) - getPriority(a.type);
+                }
 
                 var c = a.peerCount;
                 var d = b.peerCount;
@@ -2718,19 +2735,35 @@ Object.defineProperty(exports, '__esModule', { value: true });
                     });
                 }
 				else if (endPoint.type === 'WEBSOCKETS') {
-					try{
-						var startTime = new Date();
-						var ws = new WebSocket(endPoint.url);
-						ws.onopen = function(event) {
-							endPoint.latency = new Date() - startTime;
-							endPoint.hasConnectedBefore = true;
-							if (!endPoint.isItUp) {
+					function poll(){
+						try {
+							var ws = endPoint.httpService;
+							ws.onopen = function(event) {
 								endPoint.isItUp = true;
 								sortEndPoints(netStats);
+							};
+							var startTime = new Date();
+							ws.onmessage = (ev) => {
+								if(ev.data=="pong"){
+									endPoint.latency = new Date() - startTime;
+									endPoint.hasConnectedBefore = true;
+									if (!endPoint.isItUp) {
+										endPoint.isItUp = true;
+										sortEndPoints(netStats);
+									}
+									// No need to unregister event handler because it will be overwritten later
+								}
+							};
+							ws.send("ping");
+							ws.onerror = function(event) {
+								if (endPoint.isItUp) {
+									endPoint.isItUp = false;
+									sortEndPoints(netStats);
+								}
+
+								updateLastConnectedTime(endPoint);
 							}
-							ws.close();
-						};
-						ws.onerror = function(event) {
+						} catch (e){
 							if (endPoint.isItUp) {
 								endPoint.isItUp = false;
 								sortEndPoints(netStats);
@@ -2738,14 +2771,9 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 							updateLastConnectedTime(endPoint);
 						}
-					} catch (e){
-						if (endPoint.isItUp) {
-							endPoint.isItUp = false;
-							sortEndPoints(netStats);
-						}
-
-						updateLastConnectedTime(endPoint);
 					}
+					poll();
+					setInterval(poll, netStats.pollingPolicy.options);
 				}
 				else {
 					console.log(endPoint.type)
@@ -2850,6 +2878,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
                 }
 				else if (type === 'WEBSOCKETS') {
                     url = site.url;
+					httpService = new WebSocket(site.url+"ping");
 				}
                 else {
                     throw new Error('Unknown endpoint type: ' + site.type);
