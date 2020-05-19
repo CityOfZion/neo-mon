@@ -259,14 +259,6 @@
     },
     {
       "protocol": "http",
-      "url": "seed1.red4sec.com",
-      "location": "France",
-      "locale": "de",
-      "port": "10332",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
       "url": "seed.neoeconomy.io",
       "location": "Canada",
       "locale": "ca",
