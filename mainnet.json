@@ -275,7 +275,7 @@
     },
     {
       "protocol": "http",
-      "url": "node1.ledgercate.com",
+      "url": "node1.edgeofneo.com",
       "location": "France",
       "locale": "fr",
       "port": "10332",
