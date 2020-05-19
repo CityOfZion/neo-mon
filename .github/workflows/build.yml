@@ -13,8 +13,9 @@ jobs:
       with:
         version: 11.x
     - name: Install dependencies
-      run: |
-        npm install
+      run: npm ci
+    - name: Run tests
+      run: npm test
     - name: Build page
       run: bash build.sh
     - name: Deploy to GitHub Pages
