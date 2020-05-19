@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "description": "Neo Network Status Monitor",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
+    "node-fetch": "^2.6.0",
+    "jest": "^26.0.1",
+    "jest-summarizing-reporter": "^1.1.4",
     "sass": "^1.26.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --reporters jest-summarizing-reporter",
     "build-css": "sass --style=compressed --no-source-map src/assets/css/main.scss dist/main.css"
   },
   "author": "",
