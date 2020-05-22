@@ -67,22 +67,6 @@
     },
     {
       "protocol": "https",
-      "url": "seed4.switcheo.network",
-      "location": "Singapore",
-      "port": "10331",
-      "locale": "sg",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
-      "url": "seed5.switcheo.network",
-      "location": "Singapore",
-      "port": "10331",
-      "locale": "sg",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
       "url": "seed1.cityofzion.io",
       "location": "USA",
       "locale": "us",
