@@ -3,10 +3,8 @@ name: Build & Deploy
 on: [push, pull_request]
 
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@v1.1.0
@@ -16,6 +14,16 @@ jobs:
       run: npm ci
     - name: Run tests
       run: npm test
+ 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1.1.0
+      with:
+        version: 11.x
+    - name: Install dependencies
+      run: npm ci
     - name: Build page
       run: bash build.sh
     - name: Deploy to GitHub Pages
