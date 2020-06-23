@@ -146,22 +146,6 @@
       "type": "RPC"
     },
     {
-      "protocol": "https",
-      "url": "seed1.redpulse.com",
-      "location": "Frankfurt",
-      "locale": "de",
-      "port": "443",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
-      "url": "seed2.redpulse.com",
-      "location": "Singapore",
-      "locale": "sg",
-      "port": "443",
-      "type": "RPC"
-    },
-    {
       "protocol": "http",
       "url": "seed1.ngd.network",
       "location": "USA",
@@ -259,42 +243,10 @@
     },
     {
       "protocol": "https",
-      "url": "rpc6.ilink.network",
-      "location": "SG",
-      "locale": "sg",
-      "port": "8443",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
       "url": "rpc5.ilink.network",
       "location": "SG",
       "locale": "sg",
       "port": "8443",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
-      "url": "rpc4.ilink.network",
-      "location": "HK",
-      "locale": "hk",
-      "port": "8443",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
-      "url": "rpc3.ilink.network",
-      "location": "CN",
-      "locale": "cn",
-      "port": "8443",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
-      "url": "rpc.ilink.network",
-      "location": "CN",
-      "locale": "cn",
-      "port": "443",
       "type": "RPC"
     },
     {
@@ -335,14 +287,6 @@
       "location": "US",
       "locale": "us",
       "port": "10331",
-      "type": "RPC"
-    },
-    {
-      "protocol": "http",
-      "url": "pyrpc2.redpulse.com",
-      "location": "SGP",
-      "locale": "sg",
-      "port": "10332",
       "type": "RPC"
     }
   ]

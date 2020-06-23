@@ -112,14 +112,6 @@
       "type": "RPC"
     },
     {
-      "protocol": "http",
-      "url": "future.otcgo.cn",
-      "location": "China",
-      "address": "120.27.19.223",
-      "locale": "cn",
-      "type": "RPC"
-    },
-    {
       "protocol": "https",
       "url": "test1.cityofzion.io",
       "location": "USA",
