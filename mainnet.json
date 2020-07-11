@@ -243,14 +243,6 @@
     },
     {
       "protocol": "https",
-      "url": "rpc5.ilink.network",
-      "location": "SG",
-      "locale": "sg",
-      "port": "8443",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
       "url": "explorer.o3node.org",
       "location": "US",
       "locale": "us",
