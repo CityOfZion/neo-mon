@@ -10,13 +10,6 @@
       "type": "REST"
     },
     {
-      "service": "neon",
-      "url": "http://testnet-api.neonwallet.com/v2/",
-      "location": "United States",
-      "locale": "us",
-      "type": "REST"
-    },
-    {
       "service": "PubSub",
       "url": "wss://pubsub.test.neologin.io/",
       "location": "Ireland",
