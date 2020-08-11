@@ -3,8 +3,8 @@
   "pollTime": "10000",
   "sites": [
     {
-      "service": "neon",
-      "url": "http://testnet-api.neonwallet.com/v2/",
+      "service": "neoScan",
+      "url": "https://neoscan-testnet.io/api/test_net/v1/",
       "location": "United States",
       "locale": "us",
       "type": "REST"
