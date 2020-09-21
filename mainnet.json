@@ -12,6 +12,22 @@
     },
     {
       "protocol": "https",
+      "url": "mainnet2.neo2.coz.io",
+      "location": "United States",
+      "port": "443",
+      "locale": "us",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
+      "url": "mainnet3.neo2.coz.io",
+      "location": "United States",
+      "port": "443",
+      "locale": "us",
+      "type": "RPC"
+    },
+    {
+      "protocol": "https",
       "url": "node1.nl.neoblocks.org",
       "location": "The Netherlands",
       "port": "443",

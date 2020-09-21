@@ -106,40 +106,16 @@
     },
     {
       "protocol": "https",
-      "url": "test1.cityofzion.io",
-      "location": "USA",
+      "url": "testnet1.neo2.coz.io",
+      "location": "United States",
       "locale": "us",
       "port": "443",
       "type": "RPC"
     },
     {
       "protocol": "https",
-      "url": "test2.cityofzion.io",
-      "location": "USA",
-      "locale": "us",
-      "port": "443",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
-      "url": "test3.cityofzion.io",
-      "location": "USA",
-      "locale": "us",
-      "port": "443",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
-      "url": "test4.cityofzion.io",
-      "location": "USA",
-      "locale": "us",
-      "port": "443",
-      "type": "RPC"
-    },
-    {
-      "protocol": "https",
-      "url": "test5.cityofzion.io",
-      "location": "USA",
+      "url": "testnet2.neo2.coz.io",
+      "location": "United States",
       "locale": "us",
       "port": "443",
       "type": "RPC"
